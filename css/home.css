@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+ background-color:#F8F8F8;
+}
+
+/* ---------- Header ---------- */
+.header {
+	margin: 0px auto;
+	height: 51px;
+	background-color: #232121;
+	color: #FFFFFF;
+}
+
+.header .container li{
+	margin-top:14px;
+	float:left;
+}
+.header .container .right li{
+	margin-right:19px;
+}
+
+.header .container li a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.header .container li a:hover {
+	color: #ff6600;
+	text-decoration: none;
+}
+/* ---------- Search ---------- */
+.topSearch{
+	padding-top:20px;
+	padding-bottom:25px;
+	word-spacing: -100px;
+	display: inline-table;
+}
+
+.logoImg{
+	width:144px;
+	height:63px;
+}
+
+.searchInput{
+	margin-left:31px;
+	margin-top:20px;
+	padding-left:5px;
+	width:681px;
+	height:28px;
+	background-color:#B7B3B3;
+	border:0px;
+	color:#FFFFFF;
+	border-radius:3px;
+}
+
+.searchButton{
+	margin-left:16px;
+	margin-top:20px;
+	padding-left:5px;
+	width:93px;
+	height:28px;
+	background-color:#CC531E;
+	border:0px;
+	color:#FFFFFF;
+	border-radius:3px;
+}
+
+.searchButton:hover{
+	background-color:#EF4502;
+}
+
+.QRCodeImg{
+	width:64px;
+	height:64px;
+	margin-left:64px;
+}
+
+.navbox{
+	height:38px;
+	width: 100%;
+	line-height:38px;
+	border-top:1px solid #B8B3B3;
+	border-bottom:1px solid #B8B3B3;
+	word-spacing: -6px;
+}
+
+.allType{
+	 position: relative; 
+	 padding: 0px 69px; 
+}
+
+.allTypeList{
+	 width: 184px;
+	 position:absolute;
+	 left:0; 
+	 top:68px;
+	 padding-bottom:1px;
+}
+
+.allType span{
+	margin-left: 68px;
+	margin-right: 40px; 
+}
+.allType li{
+	line-height: 15px;
+	padding-bottom:18px;
+	vertical-align: top;;
+	height: 15x;
+}
+
+.allType li a{
+	margin-left: 20px;
+}
+
+.aspace{
+	margin-right: 26px;
+}
+
+/**banner**/
+.banner{
+	margin-left: 184px;
+	margin-top: 30px;
+	width:630px;
+	height:360px;
+	overflow: hidden;
+	position: relative;
+}
+.banner li{
+	float: left;
+	display: list-item;
+}
+
+.imgNum{
+	position: absolute;;
+	left: 0;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.imgNum .active{
+	background-color: #FF7700;
+}
+
+.imgNum a{
+	background-color:#FFFFFF;
+	width: 20px;
+	height: 5px;
+	margin: 0 3px;
+	display: inline-block;
+}
+/****底部****/
+.footer {
+	margin: 0px auto;
+	height: 220px;
+	background-color: #232121;
+	color: #FFFFFF;
+}
+
+
+
+
