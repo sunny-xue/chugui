@@ -1,8 +1,16 @@
 @charset "utf-8";
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, select, button, th, td, p, hr, blockquote, pre, code {
+html{
+	 font-size: 62.5%;
+	 -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+     font-family: SimSun;
+}
+
+body, div, dl, dt, dd, ul, ol, li, form, fieldset, legend, input, textarea, select, button, th, td, p, hr, blockquote, pre, code {
 	padding: 0px;
 	margin: 0px;
+	font-size: 1.2rem;
 }
 
 body {
@@ -10,8 +18,9 @@ body {
 	height: 100%;
 }
 
-body, input, textarea, select, button {
-	font: 12px SimSun, Arial, Verdana, sans-serif;
+h1, h2, h3, h4, h5, h6{
+	padding: 0px;
+	margin: 0px;
 }
 
 input, textarea, select, button {
@@ -53,7 +62,6 @@ a:hover {
 }
 
 img {
-	vertical-align: middle;
 	image-rendering: optimizeQuality;
 	-ms-interpolation-mode: bicubic;
 	border: 0px;
@@ -68,6 +76,7 @@ h1, h2, h3, h4, h5, h6, strong, em, b {
 	font-size: 100%;
 	font-style: normal;
 	font-weight: bold;
+	font-family: 'SimHei';
 }
 
 del {
@@ -87,5 +96,90 @@ del {
 }
 
 /*清浮动*/
-.clearfix:after{content:"";display:block;clear:both;}
-.clearfix{zoom:1;}
+
+.clearfix:after {
+	height: 0;
+	clear: both;
+	content:"";
+	display:table;
+}
+
+.clearfix{
+	zoom:1;
+}
+
+/**两栏或多栏自适应布局的通用类*/
+.cell {
+    display: table-cell; 
+    width: 9999px;
+    *display: inline-block; 
+    *width: auto;
+}
+
+/****超出设定宽度显示...***/
+.txt-ellipsis{
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.of{
+	overflow: hidden;
+}
+
+.block{
+	display: block;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.margin-top10{
+	margin-top: 10px;
+}
+.margin-left25{
+	margin-left: 25px;
+}
+.margin-bottom30{
+	margin-bottom: 30px;
+}
+.padding-top10{
+	padding-top: 10px;
+}
+.padding-top40{
+	padding-top: 40px;
+}
+
+.li-inline{
+	float: left;
+}
+
+.tab-txt{
+	font-family: 'SimHei';
+	font-size: 1.6rem;
+}
+
+.txt-10px{
+	font-size: 1rem;
+}
+.txt-14px{
+	font-size: 1.4rem;
+}
+
+.red-txt{
+	color:#D77C54;;
+}
+.white-txt{
+	color: #FFFFFF;
+}
+
+.red-a {
+	color:#D77C54;
+	text-decoration: none;
+}
+
+.red-a:hover {
+	color: #CC531E;
+	text-decoration: none;
+}
