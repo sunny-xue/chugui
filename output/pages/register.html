@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>注册新用户</title>
-    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="/css/common.css" rel="stylesheet" type="text/css">
-    <link href="/css/register.css" rel="stylesheet" type="text/css">
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -64,7 +63,7 @@
                     <li><a href="#">供货商</a></li>
                 </ul>
             </div>
-            <span class="right">我已注册，现在就<a href="#" class="red-a">登陆</a></span>
+            <span class="right">我已注册，现在就<a href="#">登录</a></span>
         </div>
     </div>
     <div class="container">
@@ -89,24 +88,21 @@
                 </p>
                 <p>
                     <span><i>*</i><label>短信验证码：</label></span>
-                    <input type="text" class="reg-sm-input reg-input">
+                    <input type="text" class="reg-messge-input reg-input">
                     <input type="button" class="reg-messge-btn" value="获取短信验证码">
                 </p>
                 <p>
                     <span><i>*</i><label>验证码：</label></span>
-                    <input type="text" class="reg-sm-input reg-input">
-                    <img src="/images/identifying_code.gif" class="reg-ic-img">
-                    <label>看不清?</label>
-                    <a href="#" class="red-link-txt">换一张</a>
+                    <input type="text" class="reg-input">
                 </p>
-                <div class="reg-bottom-box">
-                    <div>
-                        <input  type="checkbox">
-                        <label>我已阅读并同意《<a href="#" class="red-link-txt">出柜用户注册协议</a>》</label>
-                    </div>
-                    <div class="padding-top30">
+                <div class="reg-btn-box">
+                    <p>
+                        <input type="checkbox">
+                        <label>我已阅读并同意《出柜用户注册协议》</label>
+                    </p>
+                    <p>
                         <input type="submit" class="reg-button" value="立即注册">
-                    </div>
+                    </p>
                 </div>
             </form>
         </div>

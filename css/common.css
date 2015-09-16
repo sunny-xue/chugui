@@ -1,54 +1,18 @@
 @charset "utf-8";
 
 html{
-	 font-size: 62.5%;
-	 -webkit-text-size-adjust: 100%;
-     -ms-text-size-adjust: 100%;
-     font-family: SimSun;
+	 background-color: #F8F8F8;
 }
 
 body, div, dl, dt, dd, ul, ol, li, form, fieldset, legend, input, textarea, select, button, th, td, p, hr, blockquote, pre, code {
 	padding: 0px;
 	margin: 0px;
-	font-size: 1.2rem;
 }
 
-body {
-	width: 100%;
-	height: 100%;
-}
-
-h1, h2, h3, h4, h5, h6{
-	padding: 0px;
-	margin: 0px;
-}
-
-input, textarea, select, button {
-	font-size: 100%;
-	vertical-align: middle;
-	outline: none;
-}
-
-input[type=checkbox] {
-	margin-right: 2px;
-}
-
-textarea {
-	resize: none;
-}
-
-button {
-	cursor: pointer;
-}
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-	border-spacing: 0px;
-}
-
-th {
-	text-align: left;
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-family: "SimHei";
+    display: inline-block;
 }
 
 a {
@@ -71,14 +35,6 @@ ul, ol {
 	list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6, strong, em, b {
-	display: inline-block;
-	font-size: 100%;
-	font-style: normal;
-	font-weight: bold;
-	font-family: 'SimHei';
-}
-
 del {
 	text-decoration: line-through;
 }
@@ -94,8 +50,6 @@ del {
 .right{
 	float:right;
 }
-
-/*清浮动*/
 
 .clearfix:after {
 	height: 0;
@@ -141,11 +95,17 @@ del {
 .margin-left25{
 	margin-left: 25px;
 }
+.margin-right10{
+    margin-right: 10px;
+}
 .margin-bottom30{
 	margin-bottom: 30px;
 }
 .padding-top10{
 	padding-top: 10px;
+}
+.padding-top30{
+	padding-top: 30px;
 }
 .padding-top40{
 	padding-top: 40px;
@@ -182,4 +142,254 @@ del {
 .red-a:hover {
 	color: #CC531E;
 	text-decoration: none;
+}
+
+.red-link-txt{
+	margin-left: 2px;
+	font-family: "SimHei";
+    font-size: 1.4rem;
+    color: #EF4502;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-img li {
+    display: none;
+}
+
+.slide-bar{
+    position: absolute;
+}
+
+.slide-bar li {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slide-bar .on {
+    background-color:#CB531D;
+}
+
+
+
+/* ---------- 头部 ---------- */
+
+.header {
+    margin: 0px auto;
+    height: 51px;
+    background-color: #232121;
+    color: #FFFFFF;
+}
+
+.header .container li {
+    margin-top: 14px;
+    float: left;
+}
+
+.header .container .right li {
+    margin-left: 19px;
+}
+
+.header .container li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header .container li a:hover {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+
+/* ---------- 搜索栏 ---------- */
+
+.top {
+    white-space: nowrap;
+}
+
+.logo-img {
+    width: 144px;
+    height: 63px;
+    padding-top: 32px;
+}
+
+.search-box {
+    padding-top: 35px;
+}
+
+.search-input {
+    margin-left: 31px;
+    text-indent: 5px;
+    width: 681px;
+    height: 28px;
+    background-color: #B7B3B3;
+    border: 0px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.search-button {
+    margin-left: 16px;
+    width: 93px;
+    height: 28px;
+    background-color: #CC531E;
+    border: 0px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.search-button:hover {
+    background-color: #EF4502;
+}
+
+.qrcode-box {
+    padding-left: 64px;
+}
+
+.qrcode-img {
+    width: 64px;
+    height: 64px;
+}
+
+
+/**导航分类**/
+
+.nav-box {
+    height: 38px;
+    width: 100%;
+    line-height: 38px;
+    border-top: 1px solid #B8B3B3;
+    border-bottom: 1px solid #B8B3B3;
+    word-spacing: -6px;
+    margin-top: 25px;
+}
+
+.all-type {
+    position: relative;
+    padding: 0px 68px;
+}
+
+.all-type-list {
+    width: 184px;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    padding-bottom: 1px;
+}
+
+.all-type h3 {
+    border-right: 1px solid #B8B3B3;
+    line-height: 14px;
+    padding-right: 68px;
+    margin-top: 13px;
+    margin-right: 40px;
+    float: left;
+}
+
+.right-type li {
+    float: left;
+    margin-right: 26px;
+}
+
+.all-type-list li {
+    line-height: 15px;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+.all-type-list li a {
+    margin-left: 20px;
+}
+
+
+/****底部****/
+
+.footer {
+    clear: both;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    height: 230px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.footer li {
+    line-height: 25px;
+}
+
+.footer-logo {
+    line-height: 230px;
+}
+
+.footer-detail {
+    padding-left: 140px;
+}
+
+.footer-list {
+    padding-right: 65px;
+    padding-top: 35px;
+    vertical-align: top;
+}
+
+.footer ul {
+    margin-top: 40px;
+}
+
+.footer li {
+    font-size: 1.2rem;
+    font-family: 'SimHei';
+}
+
+.footer li a {
+    color: #FFFFFF;
+}
+
+.footer li a:hover {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.copy-right-border {
+    border-top: 1px solid #B8B3B3;
+}
+
+.copy-right-info {
+    height: 160px;
+    padding-top: 25px;
+    font-size: 1.2rem;
+    font-family: "SimHei";
+    text-align: center;
+}
+
+.copy-right-about ul {
+    margin-top: 0px;
+}
+
+.copy-right-info li {
+    color: #ff6600;
+    float: left;
+    margin-right: 25px;
+}
+
+.copy-right-info li a {
+    color: #949494;
+}
+
+.copy-right-info li a:hover {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.copy-right {
+    color: #434343;
+    text-align: center;
 }

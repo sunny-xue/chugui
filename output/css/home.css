@@ -474,7 +474,7 @@ html {
 }
 
 .banner-sm-nav .active {
-    background-image: url('../images/banner_active_btn.gif');
+    background-image: url('/images/banner_active_btn.gif');
     background-repeat: no-repeat;
 }
 
@@ -483,7 +483,7 @@ html {
     height: 7px;
     display: inline-block;
     margin: 0 5px;
-    background-image: url('../images/banner_nav_btn.gif');
+    background-image: url('/images/banner_nav_btn.gif');
     background-repeat: no-repeat;
 }
 
@@ -638,7 +638,7 @@ html {
     color: #9F9F9F;
 }
 
-.reg-email-txt{
+.red-link-txt{
 	margin-left: 5px;
 	font-family: "SimHei";
     font-size: 1.4rem;
@@ -651,7 +651,7 @@ html {
     margin-right: 5px;
 }
 
-.reg-box .login_input {
+.reg-box .reg-input {
     border: 1px solid #EBEBEB;
     width: 280px;
     height: 38px;

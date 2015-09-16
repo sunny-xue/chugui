@@ -1,0 +1,103 @@
+.reg-title {
+    border-left: 1px solid #9F9F9F;
+    font-size: 2.5rem;
+    font-family: "SimHei";
+    color: #949494;
+    line-height: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.reg-title span {
+    margin-left: 20px;
+}
+
+.login-wrap {
+    position: relative;
+    margin: 24px 0 2px;
+    z-index: 5;
+    height: 500px;
+}
+
+.login-top{
+	width: 340px;
+    word-spacing: -9px;
+}
+
+.login-top label {
+	font-family: "SimHei";
+    font-size: 2.4rem;
+    color: #949494;
+}
+
+.reg-btn{
+	display: inline-block;
+	margin-left: 156px;
+}
+
+.reg-btn a {
+	display: inline-block;
+    font-size: 1.6rem;
+    font-family: "SimHei";
+    color: #EF4502;
+}
+
+.reg-btn b {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/images/pwd-icons-new.png) -104px -75px no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.login-button {
+    border: 0px;
+    background-color: #CB531D;
+    color: #FFF;
+    width: 340px;
+    height: 40px;
+    font-family: "SimHei";
+    font-size: 2.0rem;
+}
+
+.msg-tip {
+    background-color: #FFFBCC;
+    line-height: 30px;
+    font-size: 1.4rem;
+    font-family: "SimHei";
+    color: #333333;
+    padding-left: 40px;
+    margin-top: 13px;
+}
+
+.login-banner {
+    width: 100%;
+    height: 500px;
+    background: #CB531D;
+}
+
+.login-bg {
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+
+.login-box {
+    margin-top: 48px;
+    width: 340px;
+    height: 350px;
+    background-color: #FFF;
+    padding: 23px 27px 20px 24px;
+}
+
+
+.login-form p {
+    margin-top: 10px;
+}
+
+.login-form  input{
+	 width: 340px;
+ 	height: 40px;
+    line-height: 40px;
+}

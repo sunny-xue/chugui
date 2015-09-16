@@ -1,0 +1,1 @@
+SlideShow(2000,"#slideContainer","#slidesImgs","#slideBar");
