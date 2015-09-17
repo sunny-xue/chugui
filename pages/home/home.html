@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>首页</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="/css/common.css" rel="stylesheet" type="text/css">
     <link href="home.css" rel="stylesheet" type="text/css">
@@ -46,8 +47,8 @@
     <!--主体-->
     <div class="container">
         <!--搜索栏-->
-        <div class="top">
-            <div class="inline-block logo-img">
+        <div class="nowrap releative">
+             <div class="left margin-top25">
                 <a href="#">
                     <img src="/images/login.gif" alt="出柜">
                 </a>
@@ -56,14 +57,15 @@
                 <input class="left search-input">
                 <button class="right search-button" type="button">搜索</button>
             </div>
-            <div class="inline-block qrcode-box">
+            <div class="inline-block qrcode-box absolute">
                 <img src="/images/QRCode.gif" class="qrcode-img" alt="二维码">
             </div>
         </div>
+           
         <!--导航-->
         <div class="nav-box">
             <div class="all-type">
-                <h3>全部分类</h3>
+                <span>全部分类</span>
                 <div class="right-type">
                     <ul>
                         <li><a href="#">海外直来</a></li>
@@ -297,7 +299,7 @@
                             <li>
                                 <a href="#"><img src="/images/jinkouinfo.gif"></a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#"><img src="/images/jinkouinfo.gif"></a>
                             </li>
                         </ul>
@@ -422,4 +424,5 @@
 <script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
 <script src="/js/slideshow.js" type="text/javascript"></script>
 <script src="home.js" type="text/javascript"></script>
+
 </html>

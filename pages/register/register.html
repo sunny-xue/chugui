@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>注册新用户</title>
+     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="/css/common.css" rel="stylesheet" type="text/css">
     <link href="register.css" rel="stylesheet" type="text/css">
@@ -44,13 +45,13 @@
         </div>
     </div>
     <div class="container">
-        <div class="top clearfix">
+        <div class="nowrap clearfix  margin-top25">
             <div class="left logo-img">
                 <a href="#">
                     <img src="/images/login.gif" alt="出柜">
                 </a>
             </div>
-            <div class="left reg-title">
+            <div class="left logo-title">
                 <span>欢迎注册</span>
             </div>
         </div>
@@ -64,7 +65,7 @@
                     <li><a href="#">供货商</a></li>
                 </ul>
             </div>
-            <span class="right">我已注册，现在就<a href="#" class="red-a">登陆</a></span>
+            <span class="right">我已注册，现在就<a href="../login/login.html" class="red-a">登陆</a></span>
         </div>
     </div>
     <div class="container">
@@ -100,9 +101,11 @@
                     <a href="#" class="red-link-txt">换一张</a>
                 </p>
                 <div class="reg-bottom-box">
+
                     <div>
-                        <input  type="checkbox">
-                        <label>我已阅读并同意《<a href="#" class="red-link-txt">出柜用户注册协议</a>》</label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">我已阅读并同意《<a href="#" class="red-link-txt">出柜用户注册协议</a>》
+                            </label>
                     </div>
                     <div class="padding-top30">
                         <input type="submit" class="reg-button" value="立即注册">

@@ -260,10 +260,6 @@
 
 /******进口食品**********/
 
-.jinkou-box {
-    height: 270px;
-}
-
 .jinkou-txt {
     line-height: 21px;
     padding-top: 20px;
@@ -294,7 +290,7 @@
 }
 
 .jinkou-box li {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .school-box {

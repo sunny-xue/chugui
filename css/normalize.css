@@ -7,8 +7,8 @@
  */
 
 html {
-  font-family: SimSun,Arial;
-  font-size: 62.5%;
+  font-family: SimSun,Arial !important;
+  font-size: 62.5% !important;
 	-webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -19,7 +19,9 @@ html {
 
 body {
   margin: 0;
-  font-size: 1.2rem;
+  font-family: SimSun,Arial !important;
+  font-size: 1.2rem !important;
+  background-color: #F8F8F8 !important;
 }
 
 /* HTML5 display definitions
