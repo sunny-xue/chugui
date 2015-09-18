@@ -1,183 +1,243 @@
 @charset "utf-8";
-
-html{
-	 background-color: #F8F8F8 !important;
+html {
+    font-family: SimSun, Arial !important;
+    font-size: 62.5% !important;
+    background-color: #F8F8F8 !important;
 }
 
-body, div, dl, dt, dd, ul, ol, li, form, fieldset, legend, input, textarea, select, button, th, td, p, hr, blockquote, pre, code {
-	padding: 0px;
-	margin: 0px;
+body {
+    font-family: SimSun, Arial !important;
+    font-size: 1.2rem !important;
+    background-color: #F8F8F8 !important;
 }
 
-h1,h2,h3,h4,h5,h6{
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+button,
+th,
+td,
+p,
+hr,
+blockquote,
+pre,
+code {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
     font-family: "SimHei";
     display: inline-block;
 }
 
 a {
-	color:#000000;;
-	text-decoration: none;
+    color: #000000;
+    ;
+    text-decoration: none;
 }
 
 a:hover {
-	color: #ff6600;
-	text-decoration: none;
+    color: #ff6600;
+    text-decoration: none;
 }
 
 img {
-	image-rendering: optimizeQuality;
-	-ms-interpolation-mode: bicubic;
-	border: 0px;
+    image-rendering: optimizeQuality;
+    -ms-interpolation-mode: bicubic;
+    border: 0px;
 }
 
-ul, ol {
-	list-style-type: none;
+ul,
+ol {
+    list-style-type: none;
 }
 
 del {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .container {
-	width: 1100px !important;
-	margin: 0px auto;
-    padding:0px;
-	*zoom: 1;
+    width: 1100px !important;
+    margin: 0px auto;
+    padding: 0px;
+    *zoom: 1;
 }
-.left{
-	float:left;	
+
+.left {
+    float: left;
 }
-.right{
-	float:right;
+
+.right {
+    float: right;
 }
 
 .clearfix:after {
-	height: 0;
-	clear: both;
-	content:"";
-	display:table;
+    height: 0;
+    clear: both;
+    content: "";
+    display: table;
 }
 
-.clearfix{
-	zoom:1;
+.clearfix {
+    zoom: 1;
 }
+
 
 /**两栏或多栏自适应布局的通用类*/
+
 .cell {
-    display: table-cell; 
+    display: table-cell;
     width: 9999px;
-    *display: inline-block; 
+    *display: inline-block;
     *width: auto;
 }
 
+
 /****超出设定宽度显示...***/
-.txt-ellipsis{
-	text-overflow:ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
+
+.txt-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.of{
-	overflow: hidden;
+.of {
+    overflow: hidden;
 }
 
-.block{
-	display: block;
+.block {
+    display: block;
 }
+
 .nowrap {
     white-space: nowrap;
 }
-.releative{
+
+.releative {
     position: relative;
 }
-.absolute{
+
+.absolute {
     position: absolute;
 }
-.inline-block{
-	display: inline-block;
+
+.inline-block {
+    display: inline-block;
 }
-.margin-top5{
+
+.margin-top5 {
     margin-top: 5px;
 }
-.margin-top10{
-	margin-top: 10px;
+
+.margin-top10 {
+    margin-top: 10px;
 }
-.margin-top25{
+
+.margin-top25 {
     margin-top: 25px;
 }
-.margin-top30{
+
+.margin-top30 {
     margin-top: 30px;
 }
 
-.margin-left25{
-	margin-left: 25px;
+.margin-left25 {
+    margin-left: 25px;
 }
-.margin-right10{
+
+.margin-right10 {
     margin-right: 10px;
 }
-.margin-right20{
+
+.margin-right20 {
     margin-right: 20px;
 }
-.margin-bottom20{
+
+.margin-bottom20 {
     margin-bottom: 20px;
 }
-.margin-bottom25{
+
+.margin-bottom25 {
     margin-bottom: 25px;
 }
-.margin-bottom30{
-	margin-bottom: 30px;
-}
-.padding-top10{
-	padding-top: 10px;
-}
-.padding-top30{
-	padding-top: 30px;
-}
-.padding-top40{
-	padding-top: 40px;
+
+.margin-bottom30 {
+    margin-bottom: 30px;
 }
 
-.li-inline{
-	float: left;
+.padding-top10 {
+    padding-top: 10px;
 }
 
-.tab-txt{
-	font-family: 'SimHei';
-	font-size: 1.6rem;
+.padding-top30 {
+    padding-top: 30px;
 }
 
-.txt-10px{
-	font-size: 1rem;
-}
-.txt-14px{
-	font-size: 1.4rem;
+.padding-top40 {
+    padding-top: 40px;
 }
 
-.txt-clor-B4{
+.li-inline {
+    float: left;
+}
+
+.tab-txt {
+    font-family: 'SimHei';
+    font-size: 1.6rem;
+}
+
+.txt-10px {
+    font-size: 1rem;
+}
+
+.txt-14px {
+    font-size: 1.4rem;
+}
+
+.txt-clor-B4 {
     color: #B4B4B4;
 }
 
-.red-txt{
-	color:#D77C54;;
+.red-txt {
+    color: #D77C54;
+    ;
 }
-.white-txt{
-	color: #FFFFFF;
+
+.white-txt {
+    color: #FFFFFF;
 }
 
 .red-a {
-	color:#D77C54;
-	text-decoration: none;
+    color: #D77C54;
+    text-decoration: none;
 }
 
 .red-a:hover {
-	color: #CC531E;
-	text-decoration: none;
+    color: #CC531E;
+    text-decoration: none;
 }
 
-.red-link-txt{
-	margin-left: 2px;
-	font-family: "SimHei";
+.red-link-txt {
+    margin-left: 2px;
+    font-family: "SimHei";
     font-size: 1.4rem;
     color: #EF4502;
 }
@@ -190,28 +250,28 @@ del {
     display: none;
 }
 
-.slide-bar{
+.slide-bar {
     position: absolute;
 }
 
 .slide-bar li {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  background-color: #FFF;
-  border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
-  cursor: pointer;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .slide-bar .on {
-    background-color:#CB531D;
+    background-color: #CB531D;
 }
 
 
-
 /******logo+title**********/
+
 .logo-title {
     border-left: 1px solid #9F9F9F;
     font-size: 2.5rem;
@@ -225,6 +285,7 @@ del {
 .logo-title span {
     margin-left: 20px;
 }
+
 
 /* ---------- 头部 ---------- */
 
@@ -258,8 +319,8 @@ del {
 /* ---------- 搜索栏 ---------- */
 
 .search-box {
-    margin-left:26px;
-    margin-top:56px;
+    margin-left: 26px;
+    margin-top: 56px;
 }
 
 .search-input {
@@ -290,7 +351,6 @@ del {
     right: 0px;
     top: 20px;
 }
-
 
 
 /**导航分类**/
