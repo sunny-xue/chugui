@@ -1,0 +1,198 @@
+.main-content {
+    padding-top: 12px;
+    padding-bottom: 25px;
+}
+.page-title {
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+}
+
+.page-title .nav-title {
+    color: #CB531E;
+}
+
+.transaction-page{
+	margin-top: 12px;
+}
+
+/**banner**/
+.banner-large-img {
+    margin-right: 20px;
+}
+
+.banner-large-img img {
+    width: 360px;
+    height: 280px;
+}
+
+.banner-nav {
+    width: 360px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.banner-nav ul{
+    width: 310px;
+    margin-left: 18px;
+
+}
+.banner-nav li{
+    float: left;
+    margin-left: 7px;
+}
+.banner-nav  img{
+	width: 70px;
+	height: 70px;
+}
+.banner-nav .on{
+    border: 1px solid #187CE3;
+}
+.banner-nav button{
+    border: 0px;
+    width: 25px;
+    height: 70px;
+}
+.banner-nav .left-nav{ 
+    background-image: url('../images/banner_left_nav.gif');
+    background-repeat: no-repeat;
+}
+.banner-nav .right-nav{
+    right: 0px;
+    background-image: url('../images/banner_right_nav.gif');
+    background-repeat: no-repeat;
+}
+
+.product-order{
+    width: 500px;
+    font-family: 'SimHei';
+}
+.product-order dt{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.product-price{
+    width: 500px;
+    font-size: 1.4rem;
+    font-family: 'SimHei';
+    color: #FFF;
+    margin-top: 25px;
+}
+
+.product-price li{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+.product-price .first-price{
+    background-color: #CB531D;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+}
+
+.product-price .second-price{
+    background-color: #D5754A;
+    width: 150px;
+    height: 80px;
+}
+
+.product-price .three-price{
+    background-color: #E09877;
+    width: 150px;
+    height: 80px;
+}
+
+.product-price .price-span{
+    font-size:1.6rem;
+}
+
+.product-sales{
+    background-color: #EFEFEF;
+    height: 70px;
+    width:500px;
+    font-family: 'SimHei';
+    font-size: 1.4rem;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.product-sales .postage-details{
+    color: #858585
+}
+
+.product-sales .product-to-place{
+    background-color: #FFF;
+    border: 0px;
+    width: 65px;
+    height: 20px;
+}
+
+.product-command b{
+    margin:0px 5px;
+    color: #CB531E;
+    font-size: 1.6rem;
+}
+
+.product-order-count{
+    margin-top: 22px;
+    font-size: 1.4rem;
+}
+.product-order-count .order-count{
+    width: 115px;
+    height: 20px;
+    border: 0px;
+}
+
+.product-submit-area button{
+    width: 135px;
+    height: 35px;
+    margin-top: 30px;
+    margin-right: 21px;
+    margin-bottom: 20px;
+}
+.product-submit-area .msg-tip{
+    color:#858585;
+    font-size: 1.0rem;
+}
+
+.producer-info{
+    width: 200px;
+    height: 145px;
+    font-family: 'SimHei';
+    font-size: 1.4rem;
+}
+.title-txt{
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    width: 200px;
+    background-color: #CB531D;
+    color:#fff;
+}
+
+.producer-info .producter-details-txt{
+    margin-top: 16px;
+    font-size: 1.2rem;
+    height: 65px;
+}
+.producer-info .producer-start{
+    font-size: 1.2rem;
+}
+
+.producer-start b{
+    display: inline-block;
+    width: 80px;
+    height: 9px;
+    background-image: url('../images/start.gif');
+    background-repeat: no-repeat;
+}
+
+.hot-goods{
+    font-family: 'SimHei';
+    font-size: 1.4rem;
+}
+
+.hot-goods{
+     font-size: 1.0rem;
+}

@@ -1,0 +1,167 @@
+.main-content {
+    padding-top: 12px;
+    padding-bottom: 25px;
+}
+
+.page-title {
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+}
+
+.page-title .nav-title {
+    color: #CB531E;
+}
+
+.page-content {
+    padding-top: 12px;
+    font-family: "SimHei";
+    font-size: 1.2rem;
+}
+
+.nav-list {
+    width: 170px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.nav-list span {
+    display: inline-block;
+    background-color: #CB531D;
+    line-height: 35px;
+    width: 100%;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.nav-list ul {
+    background-color: #EDEDED;
+}
+
+.nav-list li {
+    line-height: 35px;
+}
+
+.main-content .nav-view {
+    font-family: "SimHei";
+    font-size: 1.4rem;
+}
+
+.nav-view .customer-info {
+    background-color: #CB531D;
+    height: 172px;
+}
+
+.customer-info .photo-img {
+    width: 122px;
+    height: 122px;
+    background-color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 42px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+}
+
+.photo-img img {
+    width: 122px;
+    height: 122px;
+}
+
+.acount-info {
+    padding-top: 39px;
+    color: #FFF;
+    font-size: 0px;
+}
+
+.acount-info li {
+    line-height: 14px;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+.identify-link a {
+    padding-left: 20px;
+    color: #FFF;
+}
+
+.identify-link a:hover {
+    color: #ff6600;
+}
+
+.acount-info .secure-level {
+    height: 8px;
+}
+
+.operate-nav {
+    background-color: #EDEDED;
+    height: 45px;
+    padding-left: 46px;
+    padding-top: 16px;
+    font-size: 0px;
+}
+
+.operate-nav .no-split {
+    border: 0px;
+}
+
+.operate-nav li {
+    font-size: 1.4rem;
+    float: left;
+    border-left: 1px solid #B8B3B3;
+    padding: 0px 20px;
+    color: #4A4A4A;
+}
+
+.operate-nav-view {
+    margin-top: 12px;
+}
+
+.operate-nav-view .view-title {
+    background-color: #CB531D;
+    width: 100%;
+    line-height: 45px;
+    color: #FFF;
+    padding-left: 46px;
+}
+
+.operate-nav-view .view-list:nth-child(odd) {
+    background-color: #EDEDED;
+}
+
+.operate-nav-view .view-list:nth-child(even) {
+    background-color: #E4E4E4;
+}
+
+.view-list .view-item {
+    height: 135px;
+    position: relative;
+}
+
+.view-item .txt-list {
+    margin-top: 21px;
+    font-size: 0px;
+}
+
+.txt-list span {
+    font-size: 1.2rem;
+}
+
+.txt-list li {
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+.view-list img {
+    width: 90px;
+    height: 90px;
+    margin: 21px 21px 24px 24px;
+}
+
+.view-list input {
+    width: 92px;
+    height: 26px;
+    right: 212px;
+    bottom: 24px;
+}

@@ -51,7 +51,7 @@ html,body{
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url(..images/pwd-icons-new.png) -104px -75px no-repeat;
+    background: url(../images/pwd-icons-new.png) -104px -75px no-repeat;
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -97,9 +97,6 @@ html,body{
 }
 
 .login-button {
-    border: 0px;
-    background-color: #CB531D;
-    color: #FFF;
     width: 340px;
     height: 40px;
     font-family: "SimHei";

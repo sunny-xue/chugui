@@ -17,10 +17,6 @@
     border-right: 1px solid #9F9F9F;
 }
 
-.reg-customer-type-active {
-    color: #CB531E;
-}
-
 .reg-box {
     margin-left: 110px;
     margin-top: 43px;
@@ -88,15 +84,8 @@
 } 
 
 .reg-bottom-box .reg-button {
-    border: 0px;
-    background-color: #CB531D;
-    color: #FFF;
     width: 278px;
     height: 36px;
     font-family: "SimHei";
     font-size: 1.4rrem;
-}
-
-.reg-bottom-box .reg-button:hover {
-    background-color: #EF4502;
 }

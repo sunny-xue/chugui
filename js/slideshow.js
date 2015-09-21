@@ -29,12 +29,12 @@
         lastI = e;
     }
     f[e].style.display = "block";
-    a.onmouseover = k;
-    a.onmouseout = b;
-    h.onmouseover = function(i) {
+    a[0].onmouseover = k;
+    a[0].onmouseout = b;
+    h[0].onmouseover = function(i) {
         j = i ? i.target : window.event.srcElement;
-        if (j.nodeName === "LI") {
-            e = parseInt(j.value, 10) - 1;
+        if (j.nodeName === "LI" || j.parentElement.nodeName === "LI") {
+            e = parseInt(j.value || j.parentElement.value, 10) - 1;
             g();
         }
     };

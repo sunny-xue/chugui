@@ -1,0 +1,162 @@
+.main-content{
+	padding-top: 12px;
+	padding-bottom: 25px;
+}
+.page-title{
+	font-family: "微软雅黑";
+	font-size: 1.2rem;
+}
+
+.page-title .nav-title{
+	color: #CB531E;
+}
+.page-content{
+	padding-top: 12px;
+	font-family: "SimHei";
+	font-size: 1.2rem;
+}
+.nav-list{
+	width: 170px;
+	text-align: center;
+	margin-right: 20px;
+}
+.nav-list span{
+	display: inline-block;
+	background-color: #CB531D;
+	line-height: 35px;
+	width: 100%;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.nav-list ul{
+	background-color: #EDEDED;
+}
+
+.nav-list li{
+	line-height: 35px;
+}
+
+.main-content .nav-view{
+	font-family: "SimHei";
+	font-size: 1.2rem;
+	padding-top: 10px;
+}
+
+.nav-view .head-bg{
+	width: 910px;
+	background-color: #CB531D;
+	height: 35px;
+	color: #FFF;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nav-view input[type='checkbox']{
+	margin: 0px;
+	vertical-align: middle;
+	height: 14px;
+}
+
+.nav-view label{
+	margin-bottom:0px;
+	font-weight: normal;
+}
+
+.table-title{
+	margin:5px 0px 5px 15px;
+}
+
+.table-data{
+	width: 910px;
+}
+.table-data .data-line{
+	width: 910px;
+	height: 90px;
+	padding-top: 15px;
+	margin:0px;
+}
+
+.table-data .data-line:nth-child(even){
+	background-color: #F6F6F6;
+}
+
+.table-data .data-line:nth-child(odd){
+	background-color: #EDEDED;
+}
+
+.data-line .product-img{
+	width: 61px;
+	height: 61px;
+}
+
+.data-line .product-details{
+	padding-left: 10px;
+}
+
+.data-line .product-info{
+	width: 180px;
+	height: 32px;
+	white-space: normal;
+}
+
+.data-line .product-price{
+	color: #CB531E;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.product-service-img{
+	position: absolute;
+	bottom: 0px;
+}
+
+.product-count{
+	width: 57px;
+	height: 10px;
+	line-height: 12px;
+	font-size: 0px;
+	vertical-align: middle;
+}
+
+.product-count button{
+	border:0px;
+	color: #FFF;
+	width: 10px;
+	background-color: #949494;
+	font-size: 1.2rem;
+}
+.product-count-input{
+	border: 0;
+	width: 37px;
+	font-size: 1.2rem;
+}
+.nav-view .footer-bg{
+	background-color: #949494;
+	height: 35px;
+	line-height: 15px;
+	color: #FFF;
+	margin: 15px 0px;
+	padding-top: 10px;
+	vertical-align: middle;
+}
+.footer-bg .product-total{
+	color: #CB531E;
+	font-size: 1.6rem;
+	margin:0px 10px;
+}
+.footer-bg .total-price{
+	color: #CB531E;
+	font-size: 1.6rem;
+}
+.footer-bg .pay-btn{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 150px;
+	height: 35px;
+}
+
+
+
+
+

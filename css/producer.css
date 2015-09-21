@@ -1,0 +1,184 @@
+.main-content {
+    padding-top: 12px;
+    padding-bottom: 25px;
+}
+
+.page-title {
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+}
+
+.page-title .nav-title {
+    color: #CB531E;
+}
+
+.page-content {
+    padding-top: 12px;
+    font-family: "SimHei";
+    font-size: 1.2rem;
+}
+
+.nav-list {
+    width: 170px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.nav-list span {
+    display: inline-block;
+    background-color: #CB531D;
+    line-height: 35px;
+    width: 100%;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.nav-list ul {
+    background-color: #EDEDED;
+}
+
+.nav-list li {
+    line-height: 35px;
+}
+
+.main-content .nav-view {
+    font-family: "SimHei";
+}
+
+.progress-tag{
+    margin-bottom: 35px;
+}
+.progress-tag li{
+    float: left;
+    margin-left: -6px;
+    width: 196px;
+    background-image: url('../images/progress_bg.gif');
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #FFF;
+}
+.protocol-box{
+     width: 760px;
+    margin-top: 22px;
+}
+.protocol-box .protocl-title{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #EFEEEC;
+    padding-top: 10px;
+}
+.protocol-box .protocol-txt{
+   
+    background-color: #EFEEEC;
+    padding:20px; 
+}
+
+.protocol-area .next-btn{
+    width: 200px;
+    height: 25px;
+}
+.contacts-box p{
+    height: 20px;
+    margin-top: 20px;
+
+}
+.contacts-box  input{
+    width: 242px;
+    height: 20px;
+}
+
+.contacts-box span{
+    display: inline-block;
+    margin-right: 15px;
+    text-align: right;
+    width: 100px;
+}
+
+.company-info{
+    margin-top: 20px;
+}
+
+.company-info button{
+    width: 90px;
+    height: 18px;
+}
+
+.company-type-box{
+    height: 20px;
+    margin-top: 20px; 
+}
+.company-type-box .company-type{
+    position: relative;
+    display: inline-block;
+}
+
+.company-type-box .company-type select{
+    width: 242px;
+    height: 20px;
+    display: inline-block;
+}
+.company-type-box .company-type input{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 220px;
+    height: 20px;
+
+}
+
+.contacts-box input[type='submit']{
+    width: 200px;
+    height: 25px;
+    margin-left: 120px;
+}
+
+.contacts-box .submit-box{
+    margin-top: 50px;
+}
+
+.intelligence-list{
+    padding-left: 72px;
+}
+.intelligence-item{
+    text-align: center;
+    margin-right: 67px;
+    margin-top:19px;
+    float: left;
+}
+
+.intelligence-item .intelligence-img{
+    margin-top: 19px;
+    margin-bottom: 14px;
+}
+.intelligence-img img{
+    width: 160px;
+    height: 160px;
+}
+.intelligence-item .upload-btn{
+    width: 90px;
+    height: 20px;
+}
+
+.intelligence-list dt{
+    font-weight: normal;
+}
+
+.operate-area{
+    margin-top: 46px;
+    width: 100%;
+    padding-left: 250px;
+}
+
+.operate-area .back-btn{
+    width: 80px;
+    height: 25px; 
+    margin-right: 26px;
+}
+.operate-area .next-btn{
+    width: 140px;
+    height: 25px; 
+}
+.non-display{
+    display: none;
+}

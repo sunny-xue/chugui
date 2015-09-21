@@ -2,13 +2,11 @@
 html {
     font-family: SimSun, Arial !important;
     font-size: 62.5% !important;
-    background-color: #F8F8F8 !important;
 }
 
 body {
     font-family: SimSun, Arial !important;
     font-size: 1.2rem !important;
-    background-color: #F8F8F8 !important;
 }
 
 body,
@@ -50,13 +48,23 @@ h6 {
 
 a {
     color: #000000;
-    ;
     text-decoration: none;
 }
 
+a:focus,
+a:active,
 a:hover {
     color: #ff6600;
     text-decoration: none;
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+input[type="button"]:focus {
+    outline: 0;
 }
 
 img {
@@ -119,6 +127,16 @@ del {
     white-space: nowrap;
 }
 
+.txt-algin-right {
+    text-align: right;
+}
+.txt-algin-center {
+    text-align: center;
+}
+.txt-algin-left {
+    text-align: left;
+}
+
 .of {
     overflow: hidden;
 }
@@ -159,6 +177,17 @@ del {
     margin-top: 30px;
 }
 
+.margin-left10 {
+    margin-left: 10px;
+}
+
+.margin-left15 {
+    margin-left: 15px;
+}
+
+.margin-left20 {
+    margin-left: 20px;
+}
 .margin-left25 {
     margin-left: 25px;
 }
@@ -169,6 +198,10 @@ del {
 
 .margin-right20 {
     margin-right: 20px;
+}
+
+.margin-right60 {
+    margin-right: 60px;
 }
 
 .margin-bottom20 {
@@ -187,6 +220,9 @@ del {
     padding-top: 10px;
 }
 
+.padding-left20 {
+    padding-left: 20px;
+}
 .padding-top30 {
     padding-top: 30px;
 }
@@ -218,7 +254,6 @@ del {
 
 .red-txt {
     color: #D77C54;
-    ;
 }
 
 .white-txt {
@@ -240,6 +275,17 @@ del {
     font-family: "SimHei";
     font-size: 1.4rem;
     color: #EF4502;
+}
+
+.red-btn {
+    background-color: #CB531D;
+    text-align: center;
+    border: 0;
+    color: #FFF;
+}
+
+.red-btn:hover {
+    background-color: #EF4502;
 }
 
 .banner-container {
@@ -293,7 +339,7 @@ del {
     margin: 0px auto;
     height: 51px;
     background-color: #232121;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .header .container li {
@@ -371,11 +417,12 @@ del {
 }
 
 .all-type-list {
+    background-color: #FFF;
     width: 184px;
     position: absolute;
     left: 0;
-    top: 68px;
-    padding-bottom: 1px;
+    top: 52px;
+    z-index: 999;
 }
 
 .all-type span {

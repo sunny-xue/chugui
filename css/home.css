@@ -2,7 +2,7 @@
 .banner-shop-box {
     position: relative;
     margin-left: 184px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 /**banner**/
@@ -17,19 +17,25 @@
 
 .banner-large-img img {
     width: 630px;
-    height: 360px;
+    height: 250px;
 }
 
 .banner-nav {
-    height: 8px;
-    left: 34px;
-    bottom: 20px;
+    height: 95px;
+    margin-top: 14px;
 }
 
+.banner-nav li{
+    float: left;
+}
+
+.banner-nav .on{
+    border: 1px solid #187CE3;
+}
 /***右边交易信息***/
 
 .shop-info {
-    height: 358px;
+    height: 356px;
     border: 1px solid #B8B3B3;
 }
 
@@ -86,16 +92,14 @@
     margin-right: 10px;
 }
 
-.shop-info .product-info {
-    padding-top: 10px;
-}
+.product-info {
+    padding-bottom:5px;
 
-.product-info .total {
-    padding-top: 10px;
 }
 
 .product-info .total ul {
     display: inline-block;
+
 }
 
 .product-info .total li {
@@ -104,7 +108,7 @@
     padding: 0px 4px;
     line-height: 25px;
     margin-right: 10px;
-    height: 25px;
+   
     color: #FFFFFF;
 }
 
@@ -161,18 +165,23 @@
 }
 
 .hot-retailers-img {
-    padding-left: 10px;
-    padding-top: 1px;
+    margin-left: 12px;
+    margin-top: 1px;
 }
 
+.hot-retailers-img li{
+    float: left;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.hot-retailers-img img{
+    width: 153px;
+    height: 60px;
+}
 .hot-ad-img1 {
     width: 163px;
     height: 184px;
-}
-
-.hot-ad-img2 {
-    width: 926px;
-    height: 190px;
 }
 
 

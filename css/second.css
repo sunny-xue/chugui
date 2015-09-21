@@ -4,24 +4,37 @@
     padding-top: 10px;
     height: 300px;
 }
+
+.all-type-list li{
+    text-align: center;
+}
+
+.all-type-list li a {
+    margin-left: 0px;
+}
+
+.all-type-list ul li:nth-child(even){
+    border-bottom: 1px solid #9F9F9F;
+}
+
 .banner-bg {
     background-color: #CB531D;
     height: 300px;
     width: 100%;
     left: 0px;
-    margin-top: 68px;
+    margin-top: 15px;
 }
 
 .banner-shop-box {
-    position: relative;
-    margin-left: 150px;
-    margin-top: 30px;
+   float: left;
+   margin-left:150px;
 }
 
 /**banner**/
 .banner-large-img{
     margin-right: 10px;
 }
+
 .banner-large-img img {
     width: 740px;
     height: 300px;
@@ -75,43 +88,78 @@
 
 .product-area li{
     float: left;
-    margin-left: 20px;
+    margin-left: 22px;
+  
 }
+.product-area .left img{
+     width: 220px;
+     height: 150px; 
+}
+.product-area img{
+    width: 198px;
+     height: 120px;
+}
+
 
 /****橱柜****/
 
 .cupboard-box {
-    clear: both;
-    padding-top: 11px;
-    border-bottom: 1px solid #B8B3B3;
+    padding-top: 12px;
 }
 
 .cupboard-name {
-    line-height: 40px;
-    width: 240px;
+    line-height: 33px;
+    width: 100px;
     display: inline-block;
     text-align: center;
     color: #FFFFFF;
-    background-color: #CC531E;
+    font-size: 1.6rem !important;
+    background-color: #15A9C7;
 }
 
-.cupboard-list {
-    width: 240px;
+.cupboard-bg-img{
+    width: 100%;
+    height: 300px;
+}
+.cupboard-bg{
+      height: 300px;
 }
 
-.cupboard-list ul {
-    padding-left: 35px;
-    padding-top: 15px;
+.cupboard-img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.cupboard-img ul{
+    margin-left: 445px;
+}
+.cupboard-img li{
+    float: left;
+    position: relative;
+     margin-right: 10px;
+    margin-top: 10px;
+}
+.cupboard-img img{
+    width: 120px;
+    height: 135px;
 }
 
-.cupboard-li {
-    width: 50%;
-    list-style: disc;
-    font-size: 1.6rem;
-    line-height: 35px;
+.cupboard-bg span{
+    position:  absolute;
+    bottom: 2px;
+    display: inline-block;
+    background-color: #EB7C7C;
+    width: 50px;
+    line-height: 20px;
+    right: 2px;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-right: 5px;
+    text-align: right;
+    font-family: 'SimHei';
+    font-weight: 100px;
 }
 
-.cupboard-box-ad-img {
-    width: 858px;
-    height: 252px;
+.footer{
+    margin-top: 20px;
 }
