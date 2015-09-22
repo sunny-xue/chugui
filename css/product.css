@@ -245,10 +245,12 @@
 .transaction-his .head-bg {
     background-color: #EDEDED;
 }
-table{
-    margin:0px !important;
+
+.transaction-his table {
+    margin: 0px !important;
 }
-thead td {
+
+.transaction-his thead td {
     border: 0px !important;
     height: 19px;
     font-weight: normal;
@@ -257,35 +259,107 @@ thead td {
     padding-left: 50px !important;
 }
 
-tbody td {
+.transaction-his tbody td {
     padding: 0px !important;
     padding-left: 50px !important;
     padding-top: 20px !important;
     height: 60px;
-    border-top:0px !important;
+    border-top: 0px !important;
     border-bottom: 1px solid #BEBEBE;
 }
-.page-bar{
+
+.page-bar {
     border-top: 1px solid #CB531D;
     height: 36px;
 }
 
-.page-bar button{
+.page-bar button {
     width: 55px;
     height: 15px;
     background-color: #EDEDED;
     border: 0px;
 }
-.page-bar b{
-      font-weight: normal;
-        margin:0px 5px;
+
+.page-bar b {
+    font-weight: normal;
+    margin: 0px 5px;
 }
-.page-bar .current-page{
+
+.page-bar .current-page {
     display: inline-block;
     text-align: center;
-  
-  
     width: 20px;
     height: 15px;
-     background-color: #EDEDED;
+    background-color: #EDEDED;
+}
+
+
+.product-comment-box .radio-group{
+    padding-left: 5px;
+   
+}
+
+.radio-group label{
+    font-family: "微软雅黑";
+    margin-left: 15px;
+}
+
+.comment-data-box{
+    width: 880px;
+    font-family: "微软雅黑";
+    font-size: 1.0rem;
+}
+
+.comment-line:nth-child(odd){
+    background-color: #EDEDED;
+     margin:0px 0px;
+}
+
+.comment-line:nth-child(even){
+    background-color: #F4F4F4;
+     margin:0px 0px;
+}
+
+.comment-line{
+    height: 80px;
+    padding-left: 8px;
+}
+.comment-line img{
+    width: 53px;
+    height: 53px;
+}
+
+.comment-line div{
+    line-height: 80px;
+}
+.comment-line .comment-type{
+    color: #CB531E;
+    font-weight: normal;
+}
+
+.spec-data{
+    font-size: 1.2rem;
+    font-family: "SimHei";
+    color: #959595;
+}
+
+.spec-data td{
+    height: 25px;
+    text-align: center;
+    padding-top: 2px !important;
+    font-weight: normal;
+}
+
+.spec-data thead td{
+   border-top: 0px !important;
+   border-bottom: 0px !important;
+}
+.spec-data tbody td:nth-child(odd){
+    color: #cc6633;
+    width: 80px;
+}
+
+.spec-data tbody td:nth-child(even){
+    color: #cc6633;
+    width: 140px;
 }

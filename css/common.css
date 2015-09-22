@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: SimSun, Arial !important;
-    font-size:12px !important;
+    font-size: 12px;
 }
 
 body,
@@ -238,6 +238,7 @@ del {
 .tab-txt {
     font-family: 'SimHei';
     font-size: 1.6rem;
+    color:#696969;
 }
 
 .txt-10px {
@@ -462,6 +463,10 @@ del {
     color: #FFFFFF;
 }
 
+.footer .tab-txt{
+     color: #FFFFFF;
+}
+
 .footer li {
     line-height: 25px;
 }
@@ -532,4 +537,7 @@ del {
 .copy-right {
     color: #434343;
     text-align: center;
+}
+.non-display{
+    display: none;
 }
