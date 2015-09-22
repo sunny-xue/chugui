@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 html {
     font-family: SimSun, Arial !important;
     font-size: 62.5% !important;
@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: SimSun, Arial !important;
-    font-size: 1.2rem !important;
+    font-size:12px !important;
 }
 
 body,
