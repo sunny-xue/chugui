@@ -1,4 +1,6 @@
-
+body{
+     background-color: #f8f8f8;
+}
 .banner-shop-box {
     position: relative;
     margin-left: 184px;
@@ -142,15 +144,11 @@
 
 /*****热销*******/
 
-.hot-box {
-    width: 163px;
-}
-
 .hot-txt {
     line-height: 40px;
     text-align: center;
-    color: #CB531E;
-    background-color: #ECC2AF;
+    color: #cc531e;
+    background-color: #ecc2af;
 }
 
 .hot-img {
@@ -165,14 +163,13 @@
 }
 
 .hot-retailers-img {
-    margin-left: 12px;
     margin-top: 1px;
 }
 
 .hot-retailers-img li{
     float: left;
-    margin-left: 1px;
-    margin-top: 1px;
+    margin-right:4px;
+    margin-bottom: 4px;
 }
 
 .hot-retailers-img img{
@@ -184,6 +181,16 @@
     height: 184px;
 }
 
+.hot-box li{
+    float: left;
+   margin-right: 4px;
+   word-spacing: 4px;
+}
+
+.hot-box img{
+    width: 216px;
+    height: 195px;
+}
 
 /******国家特色,限时购********/
 
@@ -227,11 +234,37 @@
     height: 241px;
 }
 
+.timeout-img .price-div{
+    position: absolute;
+    bottom: 0px;
+    width: 347px;
+    background-color: #cc531e;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-family: "SimHei";
+}
+
+.price-div b{
+    padding-left: 15px;
+}
+
+.timeout-img .qg-btn{
+    float: right;
+    width: 104px;
+    height: 40px;
+    border: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url("../images/qg_btn.gif");
+    background-repeat: no-repeat;
+    color: #cc531e;
+}
+
 
 /****橱柜****/
 
 .cupboard-box {
-    clear: both;
     padding-top: 11px;
     border-bottom: 1px solid #B8B3B3;
 }
@@ -254,19 +287,40 @@
     padding-top: 15px;
 }
 
-.cupboard-li {
+.cupboard-list li {
+    float: left;
     width: 50%;
     list-style: disc;
     font-size: 1.6rem;
     line-height: 35px;
+    font-family: "SimHei";
+    
+}
+.cupboard-list li a{
+    color: #6a6a6a;
 }
 
-.cupboard-box-ad-img {
-    width: 858px;
-    height: 252px;
+.cupboard-list li a:hover{
+    color: #ff6600;
+}
+.cupboard-banner li{
+    float: left;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+.cupboard-banner li img {
+    width: 169px;
+    height: 126px;
 }
 
+.second-cupboard-banner{
+    width: 688px;
+}
 
+.second-cupboard-banner .right-banner-img{
+    width: 171px;
+    height: 100%;
+}
 /******进口食品**********/
 
 .jinkou-txt {
