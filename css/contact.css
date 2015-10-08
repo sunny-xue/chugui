@@ -1,0 +1,49 @@
+.container{
+	font-family: "SimHei";
+	font-size: 1.4rem;
+	color: #959495;
+}
+.nav-type{
+	border-top: 1px solid #B8B3B3;
+    border-bottom: 1px solid #B8B3B3;
+    margin-top: 25px;
+	padding-left: 180px;
+	font-size: 0px;
+}
+
+.nav-type ul{
+	padding-top: 11px;
+	height: 38px;
+	margin-left: -14px;
+}
+
+.nav-type li{
+	font-size: 1.4rem;
+	float: left;
+	padding-right: 14px;
+	padding-left: 14px;
+
+}
+
+.nav-type a{
+	color: #959495;
+}
+
+.nav-type li:nth-child(2){
+	border-left: 1px solid #b5b4b4;
+	border-right: 1px solid #b5b4b4;
+}
+
+.contact-content{
+	padding-left: 180px;
+	padding-bottom: 150px;
+}
+
+.contact-content dt{
+	padding-top: 36px;
+	font-size: 1.4rem;
+}
+.contact-content dd{
+	padding-top: 20px;
+	font-size: 1.2rem;
+}

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset='utf-8'>
-	<title>结算页</title>
-	 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	  <link href="css/common.css" rel="stylesheet" type="text/css">
+    <meta charset='utf-8'>
+    <title>结算页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
     <link href="css/balance.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<!--头部-->
+    <!--头部-->
     <div class="header">
         <div class="container">
             <ul class="left">
@@ -43,7 +45,7 @@
     </div>
     <!--主体-->
     <div class="container">
-    	 <!--搜索栏-->
+        <!--搜索栏-->
         <div class="nowrap releative">
             <div class="left margin-top25">
                 <a href="#">
@@ -58,13 +60,140 @@
                 <img src="images/QRCode.gif" class="qrcode-img" alt="二维码">
             </div>
         </div>
-		<div class="main-container">
-			<h2>填写并核对订单信息</h2>
-			<div class="address-info">
-				<h2>收货人信息</h2>
-			</div>
-		</div>
-        
+        <div class="main-container">
+            <h3>填写并核对订单信息</h3>
+            <div class="address-info">
+                <div class="clearfix">
+                    <h3 class="left">收货人信息</h3>
+                    <a href="#" class="right add-address-link">新增收货地址</a>
+                </div>
+                <div class="address-list padding-left20">
+                    <ul>
+                        <li>
+                            <div>
+                                <button class="custom-button button-active">收货人1</button>
+                                <span>北京 朝阳区 二环到三环之间巴拉巴拉巴拉D座333</span>
+                                <span>188****8888</span></div>
+                        </li>
+                        <li>
+                            <div>
+                                <button class="custom-button">收货人2</button>
+                                <span>北京 朝阳区 二环到三环之间巴拉巴拉巴拉D座333</span>
+                                <span>188****8888</span></div>
+                        </li>
+                        <li>
+                            <div>
+                                <button class="custom-button">收货人3</button>
+                                <span>北京 朝阳区 二环到三环之间巴拉巴拉巴拉D座333</span>
+                                <span>188****8888</span></div>
+                        </li>
+                        <li>
+                            <div>
+                                <button class="custom-button">收货人4</button>
+                                <span>北京 朝阳区 二环到三环之间巴拉巴拉巴拉D座333</span>
+                                <span>188****8888</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more-address margin-top10">
+                    更多地址
+                    <button id="moreLink" class="more-nav"></button>
+                </div>
+            </div>
+            <div class="pay-div">
+                <h3>支付方式</h3>
+                <div class="pay-type padding-left20">
+                    <button class="button-active">货到付款</button>
+                    <button>货到付款</button>
+                    <button>货到付款</button>
+                    <button>货到付款</button>
+                </div>
+            </div>
+            <div class="product-div">
+                <div class="clearfix">
+                    <h3 class="left">送货清单</h3>
+                    <a href="#" class="right go-shop-car">返回修改购物车</a>
+                </div>
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="left">
+                            <h3>配送方式</h3>
+                            <div>
+                                <button class="button-active">出柜物流</button>
+                                <button>出柜物流</button>
+                            </div>
+                            <span class="product-date">配送时间预计9月13号送达</span>
+                            <span class="price">
+                                 运费:<b>¥0.00</b>
+                            </span>
+                        </div>
+                        <div class="cell">
+                            <h3>商家：商家名称</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="images/product_img.gif" height="50" width="50"></a><span class="product-details">产品名产品名称产品名称产品名称产品名称</span></li>
+                                <li>
+                                    <a href="#"><img src="images/product_img.gif" height="50" width="50"></a><span class="product-details">产品名产品名称产品名称产品名称产品名称</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="left">
+                            <h3>配送方式</h3>
+                            <div>
+                                <button class="button-active">出柜物流</button>
+                                <button>出柜物流</button>
+                            </div>
+                            <span class="product-date">配送时间预计9月13号送达</span>
+                            <span class="price">
+                                 运费:<b>¥0.00</b>
+                            </span>
+                        </div>
+                        <div class="cell">
+                            <h3>商家：商家名称</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="images/product_img.gif" height="50" width="50"></a><span class="product-details">产品名产品名称产品名称产品名称产品名称</span></li>
+                                <li>
+                                    <a href="#"><img src="images/product_img.gif" height="50" width="50"></a><span class="product-details">产品名产品名称产品名称产品名称产品名称</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3>订单备注</h3>
+                <div class="note-div">
+                    <input type="text" class="note-txt">
+                    <span>提示：这是提示提示提示提示</span>
+                </div>
+            </div>
+        </div>
+        <div class="receipt-div">
+            <h3>发票信息</h3>
+            <div class="receipt-type">
+                <button>普通发票（纸质）</button>
+                <button>个人</button>
+                <button>明细</button>
+                <a href="#" class="update-btn">修改</a>
+            </div>
+        </div>
+        <div class="count-div">
+            <div>已选<b class="product-total">2</b>件商品总计：<b>￥9999.99</b></div>
+            <div>折扣：<b>￥0.00</b></div>
+            <div>运费：<b class="yun-price">￥99.99</b></div>
+            <div>应付：<b>￥99999.99</b></div>
+        </div>
+        <div class="submit-div">
+            <div class="submit-content">
+                <span>应付金额：</span><b>¥9999.99</b>
+                <input type="button" class="red-btn" value="提交订单">
+            </div>
+        </div>
+
+          <div class="customer-address">
+            <span> 寄送至：北京朝阳巴拉巴拉巴拉 巴拉巴拉巴拉巴拉巴拉巴154拉 </span>
+            <span>收货人：收货人</span>
+               
+            </div>
     </div>
     <!---底部-->
     <div class="footer">
@@ -138,4 +267,7 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/balance.js"></script>
+
 </html>

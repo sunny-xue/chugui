@@ -46,6 +46,30 @@ h6 {
     display: inline-block;
 }
 
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
 a {
     color: #000000;
     text-decoration: none;
@@ -130,9 +154,11 @@ del {
 .txt-algin-right {
     text-align: right;
 }
+
 .txt-algin-center {
     text-align: center;
 }
+
 .txt-algin-left {
     text-align: left;
 }
@@ -169,6 +195,10 @@ del {
     margin-top: 10px;
 }
 
+.margin-top20 {
+    margin-top: 20px;
+}
+
 .margin-top25 {
     margin-top: 25px;
 }
@@ -188,6 +218,7 @@ del {
 .margin-left20 {
     margin-left: 20px;
 }
+
 .margin-left25 {
     margin-left: 25px;
 }
@@ -220,9 +251,13 @@ del {
     padding-top: 10px;
 }
 
+.padding-left10 {
+    padding-left: 10px;
+}
 .padding-left20 {
     padding-left: 20px;
 }
+
 .padding-top30 {
     padding-top: 30px;
 }
@@ -238,7 +273,7 @@ del {
 .tab-txt {
     font-family: 'SimHei';
     font-size: 1.6rem;
-    color:#696969;
+    color: #696969;
 }
 
 .txt-10px {
@@ -267,7 +302,7 @@ del {
 }
 
 .red-a:hover {
-    color: #CC531E;
+    color: #cc531e;
     text-decoration: none;
 }
 
@@ -374,10 +409,9 @@ del {
     text-indent: 5px;
     width: 681px;
     height: 28px;
-    background-color: #B7B3B3;
     border: 0px;
-    color: #FFFFFF;
     border-radius: 3px;
+    border: 1px solid #bbbbbb;
 }
 
 .search-button {
@@ -400,7 +434,7 @@ del {
 }
 
 
-/**导航分类**/
+/**头部导航分类**/
 
 .nav-box {
     height: 38px;
@@ -450,6 +484,47 @@ del {
 }
 
 
+/****右边导航****/
+
+.page-title {
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+}
+
+.page-title .nav-title {
+    color: #CB531E;
+}
+
+.page-content {
+    padding-top: 12px;
+    font-family: "SimHei";
+    font-size: 1.2rem;
+}
+
+.nav-list {
+    width: 170px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.nav-list span {
+    display: inline-block;
+    background-color: #cc531e;
+    width: 100%;
+    color: #fefefe;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.nav-list li {
+    height: 35px;
+    padding:12px 0px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
 /****底部****/
 
 .footer {
@@ -462,8 +537,8 @@ del {
     color: #FFFFFF;
 }
 
-.footer .tab-txt{
-     color: #FFFFFF;
+.footer .tab-txt {
+    color: #FFFFFF;
 }
 
 .footer li {
@@ -537,6 +612,12 @@ del {
     color: #434343;
     text-align: center;
 }
-.non-display{
+/*****底部导航结束***********/
+.non-display {
     display: none;
+}
+.border-style{
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }

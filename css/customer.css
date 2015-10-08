@@ -2,45 +2,6 @@
     padding-top: 12px;
     padding-bottom: 25px;
 }
-
-.page-title {
-    font-family: "微软雅黑";
-    font-size: 1.2rem;
-}
-
-.page-title .nav-title {
-    color: #CB531E;
-}
-
-.page-content {
-    padding-top: 12px;
-    font-family: "SimHei";
-    font-size: 1.2rem;
-}
-
-.nav-list {
-    width: 170px;
-    text-align: center;
-    margin-right: 20px;
-}
-
-.nav-list span {
-    display: inline-block;
-    background-color: #CB531D;
-    line-height: 35px;
-    width: 100%;
-    color: #fff;
-    letter-spacing: 2px;
-}
-
-.nav-list ul {
-    background-color: #EDEDED;
-}
-
-.nav-list li {
-    line-height: 35px;
-}
-
 .main-content .nav-view {
     font-family: "SimHei";
     font-size: 1.4rem;
