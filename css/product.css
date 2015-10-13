@@ -11,6 +11,37 @@
 
 /**banner**/
 
+/*滑块*/
+.magnifyingBegin{
+    width: 150px;
+    height: 175px;
+    left: 0;
+    top: 0;
+    background-color: #454545;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    position: absolute;
+    cursor: move;
+    display: none;
+}
+/*放大镜显示区域*/
+.magnifyingShow{
+    width: 360px;
+    height: 360px;
+    display: none;
+    position: absolute;
+    left: 400px;
+    top: 0;
+    overflow: hidden;
+    background-color: #454545;
+}
+.magnifyingShow > img{
+    width: 900px;
+    height: 1350px;
+    margin-left:0;
+    margin-top: 0;
+}
+
 .banner-large-img {
     margin-right: 20px;
 }
@@ -41,7 +72,7 @@
     height: 70px;
 }
 
-.banner-nav .on {
+.con-FangDa-ImgList > .active{
     border: 1px solid #187CE3;
 }
 
