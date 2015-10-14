@@ -107,29 +107,34 @@
                 </div>
                 <div class="cell nav-view">
                     <span>我的采购车</span>
-                    <div class="margin-top10">
+                    <div id="shopList" class="margin-top10">
                         <div class="row head-bg">
                             <div class="col-md-4">
                                 <label class="margin-right60">
-                                    <input type="checkbox"><span class="margin-left10">全选</span></label>商品信息</div>
+                                    <input class="allCheck" type="checkbox"><span class="margin-left10">全选</span></label>商品信息</div>
                             <div class="col-md-2">运输温度</div>
                             <div class="col-md-2">单价（元）</div>
                             <div class="col-md-1">数量</div>
                             <div class="col-md-2">金额（元）</div>
                             <div class="col-md-1">操作</div>
                         </div>
-                        <div>
-                            <div class="table-title">
-                                <label>
-                                    <input type="checkbox"><span class="margin-left10">商铺：出柜电子商务</span></label>
-                            </div>
-                            <div class="table-data">
+                        <div id="shop-item">
+                       <div class="table-div">
+                                <label class="margin-left10">
+                                    <input type="checkbox" dataType="typeA"><span class="margin-left10">商铺：出柜电子商务</span></label>
+
+                                     <div class="table-data">
                                 <div class="row data-line">
                                     <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="images/product_img.gif" class="left product-img">
-                                            <div class="cell product-details">
+                                        <div class="left">
+                                             <input type="checkbox" dataType="typeA">
+                                             <a href="#">
+                                            <img src="images/product_img.gif" class="product-img">
                                         </a>
+                                        </div>
+                                        
+                                        <div class="cell product-details">
+                                       
                                         <div class="txt-ellipsis product-info"><a href="#">【澳大利亚进口】德运 脱脂乳粉 德运奶粉，澳洲好奶粉。</a>
                                         </div>
                                         <img class="product-service-img" src="images/product_service.gif">
@@ -160,10 +165,15 @@
                                 </div>
                                 <div class="row data-line">
                                     <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="images/product_img.gif" class="left product-img">
-                                            <div class="cell product-details">
+                                        <div class="left">
+                                             <input type="checkbox" dataType="typeA">
+                                             <a href="#">
+                                            <img src="images/product_img.gif" class="product-img">
                                         </a>
+                                        </div>
+                                        
+                                        <div class="cell product-details">
+                                       
                                         <div class="txt-ellipsis product-info"><a href="#">【澳大利亚进口】德运 脱脂乳粉 德运奶粉，澳洲好奶粉。</a>
                                         </div>
                                         <img class="product-service-img" src="images/product_service.gif">
@@ -192,54 +202,22 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="table-title">
-                                <label>
-                                    <input type="checkbox"><span class="margin-left10">商铺：出柜电子商务</span></label>
-                            </div>
-                            <div class="table-data">
+                            </div> <div class="table-div">
+                                <label class="margin-left10">
+                                    <input id="areaCheck" type="checkbox" dataType="typeB"><span class="margin-left10">商铺：出柜电子商务</span></label>
+
+                                     <div class="table-data">
                                 <div class="row data-line">
                                     <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="images/product_img.gif" class="left product-img">
-                                            <div class="cell product-details">
+                                        <div class="left">
+                                             <input type="checkbox" dataType="typeB">
+                                             <a href="#">
+                                            <img src="images/product_img.gif" class="product-img">
                                         </a>
-                                        <div class="txt-ellipsis product-info"><a href="#">【澳大利亚进口】德运 脱脂乳粉 德运奶粉，澳洲好奶粉。</a>
                                         </div>
-                                        <img class="product-service-img" src="images/product_service.gif">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <span style="color: #707070;">恒温（12℃-15℃）</span>
-                                    </div>
-                                    <div class="col-md-2">
-                                        ≥10盒 90元/盒
-                                    </div>
-                                    <div class="col-md-1">
-                                        <span class="product-price">1800</span>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <div class="product-count nowrap">
-                                            <button>-</button>
-                                            <input type="text" class="product-count-input" value="12">
-                                            <button>+</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="right">
-                                            <div class="txt-algin-left"><a href="#">移出采购车</a></div>
-                                            <div class="txt-algin-left"><a href="#">删除</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row data-line">
-                                    <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="images/product_img.gif" class="left product-img">
-                                            <div class="cell product-details">
-                                        </a>
+                                        
+                                        <div class="cell product-details">
+                                       
                                         <div class="txt-ellipsis product-info"><a href="#">【澳大利亚进口】德运 脱脂乳粉 德运奶粉，澳洲好奶粉。</a>
                                         </div>
                                         <img class="product-service-img" src="images/product_service.gif">
@@ -270,10 +248,15 @@
                                 </div>
                                 <div class="row data-line">
                                     <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="images/product_img.gif" class="left product-img">
-                                            <div class="cell product-details">
+                                        <div class="left">
+                                             <input type="checkbox" dataType="typeB">
+                                             <a href="#">
+                                            <img src="images/product_img.gif" class="product-img">
                                         </a>
+                                        </div>
+                                        
+                                        <div class="cell product-details">
+                                       
                                         <div class="txt-ellipsis product-info"><a href="#">【澳大利亚进口】德运 脱脂乳粉 德运奶粉，澳洲好奶粉。</a>
                                         </div>
                                         <img class="product-service-img" src="images/product_service.gif">
@@ -303,10 +286,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            </div>
                         <div class="row footer-bg releative">
                         	<div class="col-md-6"><label class="margin-right60">
-                                    <input type="checkbox"><span class="margin-left10">全选</span></label></div>
+                                    <input class="allCheck" type="checkbox"><span class="margin-left10">全选</span></label></div>
                         	<div class="col-md-2">已选商品<span class="product-total">0</span>件</div>
                         	<div class="col-md-2">合计：<span class="total-price">￥0,00</span></div>
                         	<input type="button" class="red-btn pay-btn" value="结算">
@@ -388,5 +371,6 @@
         </div>
     </div>
 </body>
-
+<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="js/shopcar.js" type="text/javascript"></script>
 </html>
