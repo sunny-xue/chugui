@@ -1,0 +1,95 @@
+.search-input{
+	width: 343px;
+}
+.store-name{
+	font-size: 2.5rem;
+}
+.top-title {
+    border-left: 1px solid #9F9F9F;
+    font-size: 2.5rem;
+    font-family: "SimHei";
+    color: #949494;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.top-title span {
+    margin-left: 20px;
+}
+
+.store-start{
+	font-size: 1.2rem;
+	display: block;
+}
+.store-start b {
+    display: inline-block;
+    width: 80px;
+    height: 9px;
+    background-image: url('../images/start.gif');
+    background-repeat: no-repeat;
+}
+
+.search-box{
+	margin-top: 35px;
+}
+
+.main-container{
+	border-top:1px solid #b5b5b5;
+	padding-top: 20px;
+}
+
+.company-banner{
+	height: 110px;
+}
+
+.company-banner{
+	width: 100%;
+	height: 100%;
+}
+
+.nav-div{
+	height: 40px;
+	background-color: #cc531e;
+	font-size: 0px;
+	font-family: "SimHei";
+	margin-top: 15px;
+}
+
+.nav-div .nav-menu li{
+	height: 40px;
+	float: left;
+	font-size: 1.4rem;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	background-color: #cc531e;
+	position: relative;
+}
+
+.nav-div .nav-menu .spacer {
+  width: 1px;
+  height: 18px;
+  margin-top: 12px;
+  padding: 0;
+  background: #FFF;
+  overflow: hidden;
+}
+
+.nav-div .nav-menu a
+{
+	color: #FFF;
+}
+
+.nav-div .nav-menu li:hover{ 
+  background: #EF4502;
+  color: #fff;
+  position: relative;
+}
+
+.nav-div .nav-menu .second-menu{
+	display: none;
+	width: 115px;
+	position: absolute;
+	left: 0px;
+	top: 40px;
+}
