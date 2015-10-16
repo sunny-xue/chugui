@@ -36,6 +36,7 @@
 .main-container{
 	border-top:1px solid #b5b5b5;
 	padding-top: 20px;
+    font-family: 'SimHei';
 }
 
 .company-banner{
@@ -92,4 +93,204 @@
 	position: absolute;
 	left: 0px;
 	top: 40px;
+    z-index: 9999;
+}
+
+.goods-div{
+    width: 900px;
+    margin-top: 7px;
+    color: #7b7b7b;
+    font-size: 0px;
+}
+.goods-div .title-txt-spacer{
+    margin-top: 6px;
+    margin-right: 25px;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.goods-div .title{
+    font-family: 'SimHei';
+    font-size: 1.4rem;
+}
+
+.goods-div .more{
+    font-family: 'SimHei';
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+.goods-div .goods-list{
+    margin-top: 6px;
+}
+
+.goods-list .goods-item{
+    display: inline-block;
+    width: 200px;
+    height: 290px;
+    border: 1px solid #e5e5e5;
+    padding:12px 14px 18px 13px;
+    position: relative;
+    margin-right: 25px;
+    margin-bottom: 21px;
+}
+
+.goods-item img{
+    width: 171px;
+    height: 145px;
+    text-align: center;
+}
+
+.goods-item .spacer{
+    position: absolute;
+    left: 8px;
+    margin-top: 10px;
+    width:183px;
+    height: 1px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.goods-item .goods-details{
+    margin-top: 22px;
+    font-size: 1.2rem;
+}
+
+.goods-details dt{
+    margin-bottom: 5px;
+}
+.goods-details dd{
+    color: #c0c0c0;
+}
+
+.goods-details .price-txt{
+    display: inline-block;
+    margin-top: 5px;
+}
+.goods-details .price{
+    color: #cc531e;
+}
+
+
+.producer-info {
+    width: 200px;
+    height: 145px;
+    font-family: 'SimHei';
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+.producer-info .producter-details{
+    height: 120px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+.right-info .title-txt {
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    width: 200px;
+    background-color: #CB531D;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.producer-info .producter-details-txt {
+    width: 100%;
+    display: inline-block;
+    font-size: 1.2rem;
+    height: 25px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.producer-info input[type='button']{
+    margin-top: 10px;
+    width: 70px;
+    height: 20px;
+}
+.producer-info .producer-start {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.producer-start b {
+    display: inline-block;
+    width: 80px;
+    height: 9px;
+    background-image: url('../images/start.gif');
+    background-repeat: no-repeat;
+}
+
+.contact-div{
+    margin-bottom: 20px;
+}
+.contact-div .contact-info{
+    height: 80px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+.contact-info span{
+     display: inline-block;
+     margin-left: 15px;
+     margin-top: 15px;
+}
+
+.search-div{
+    margin-bottom: 20px;
+}
+
+.search-div .search-info{
+    padding-left: 15px;
+    height: 120px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+.search-info input{
+    height: 20px;
+}
+.search-info .tag-div{
+    padding-top: 15px;
+}
+.search-info .price-div{
+    margin-top: 10px;
+}
+.search-info .price-input{
+     width: 40px;   
+}
+.search-info .search-btn{
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 58px;
+    background-color: #eeeeee;
+    border: 1px solid #e5e5e5;
+}
+
+.hot-div .goods-item{
+    display: inline-block;
+    width: 200px;
+    height: 396px;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    padding:12px 14px 18px 13px;
+    position: relative;
+   
+}
+
+.hot-div ul{
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+.hot-div li{
+    width: 145px;
+     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.hot-div li a{
+    color: #8b8a8a;
 }
