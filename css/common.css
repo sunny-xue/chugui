@@ -254,6 +254,7 @@ del {
 .padding-left10 {
     padding-left: 10px;
 }
+
 .padding-left20 {
     padding-left: 20px;
 }
@@ -456,7 +457,40 @@ del {
     position: absolute;
     left: 0;
     top: 52px;
-    z-index: 999;
+    z-index: 30;
+}
+
+.all-type-list .menu {
+    width: 560px;
+    height: 360px;
+    background-color: #fff;
+    padding-left: 10px;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    z-index: 30;
+    filter: alpha(opacity=95);
+    opacity: 0.95;
+    display: none;
+}
+
+.menu dl{
+    line-height: 40px;
+    border-bottom: 1px solid #efefef;
+}
+.menu dl a{
+    margin-left:0px !important;
+}
+.menu dt {
+    width: 100px;
+    font-weight: bold;
+    float: left;
+}
+
+.menu dd {
+    float: left;
+    color: #cccccc;
+    white-space: nowrap;
 }
 
 .all-type span {
@@ -518,7 +552,7 @@ del {
 
 .nav-list li {
     height: 35px;
-    padding:12px 0px;
+    padding: 12px 0px;
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
@@ -612,11 +646,15 @@ del {
     color: #434343;
     text-align: center;
 }
+
+
 /*****底部导航结束***********/
+
 .non-display {
     display: none;
 }
-.border-style{
+
+.border-style {
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;

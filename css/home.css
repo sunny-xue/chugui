@@ -176,6 +176,11 @@ body{
     width: 153px;
     height: 60px;
 }
+
+.hot-retailers-img li:hover img {
+    filter: alpha(opacity = 60);
+    opacity: 0.6;
+}
 .hot-ad-img1 {
     width: 163px;
     height: 184px;
@@ -192,6 +197,15 @@ body{
     height: 195px;
 }
 
+
+.hot-box li:hover img {
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
 /******国家特色,限时购********/
 
 .special-txt {
@@ -202,7 +216,13 @@ body{
 .special-img {
     margin-left: -8px;
 }
-
+.special-img li:hover img {
+   -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
 .special-img-li {
     margin-left: 7px;
 }
@@ -232,6 +252,11 @@ body{
 .time-ad-img {
     width: 347px;
     height: 241px;
+}
+
+.time-ad-img:hover {
+    filter: alpha(opacity = 60);
+    opacity: 0.6;
 }
 
 .timeout-img .price-div{
@@ -311,6 +336,11 @@ body{
 .cupboard-banner li img {
     width: 169px;
     height: 126px;
+}
+
+.cupboard-banner li:hover img{
+    filter: alpha(opacity = 60);
+    opacity: 0.6;
 }
 
 .second-cupboard-banner{
