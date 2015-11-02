@@ -2,6 +2,7 @@ $(function () {
 	$.fn.selectedAll = function(selected,dataType){
 		var that = $(this),
 		checkBoxs = that.find("input[type='checkbox']");
+		
 		if(typeof(dataType) != "undefined"){
 			$.each(checkBoxs,function (i,e) {
 				if($(this).attr('dataType') === dataType){
