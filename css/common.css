@@ -445,19 +445,19 @@ del {
     border-bottom: 1px solid #B8B3B3;
     word-spacing: -6px;
     margin-top: 25px;
+    padding:0px 68px;
 }
 
 .all-type {
     position: relative;
-    padding: 0px 68px;
 }
 
 .all-type-list {
     width: 184px;
     position: absolute;
     left: 0;
-    top: 52px;
     z-index: 30;
+    margin-top: 30px;
 }
 
 .all-type-list .menu {
@@ -493,7 +493,7 @@ del {
     white-space: nowrap;
 }
 
-.all-type span {
+.nav-box span {
     border-right: 1px solid #B8B3B3;
     line-height: 14px;
     padding-right: 68px;
