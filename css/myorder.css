@@ -1,0 +1,113 @@
+.main-content{
+	padding-top: 12px;
+	padding-bottom: 25px;
+}
+.main-content .nav-view{
+	font-family: "SimHei";
+	font-size: 1.2rem;
+}
+.nav-view .head-bg{
+	width: 910px;
+	background-color: #CB531D;
+	height: 35px;
+	color: #FFF;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nav-view input[type='checkbox']{
+	margin: 0px;
+	vertical-align: middle;
+	height: 14px;
+}
+
+.nav-view label{
+	margin-bottom:0px;
+	font-weight: normal;
+}
+
+.table-div{
+	margin:5px 0px 5px 0px;
+}
+
+.table-data{
+	width: 910px;
+}
+.table-data .data-line{
+	width: 910px;
+	height: 120px;
+	margin:5px 0px !important;
+	border:1px solid #E8E8E8;
+}
+
+.table-data .order-info {
+	line-height: 40px;
+	background-color: #F6F6F6;
+}
+.table-data .data-line:hover{
+	border:1px solid #3c3c3c;
+}
+
+.data-line .product-img{
+	width: 61px;
+	height: 61px;
+}
+
+.data-line .product-details{
+	padding-left: 10px;
+}
+
+.data-line .product-info{
+	width: 180px;
+	height: 32px;
+	white-space: normal;
+}
+
+.data-line .product-price{
+	color: #CB531E;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.product-service-img{
+	position: absolute;
+	bottom: 0px;
+}
+
+.row{
+	margin-left:0px !important;
+	margin-right:0px !important;
+}
+
+.row .col-md-2,.col-md-1{
+	text-align: center;
+}
+
+.tab-nav{
+	font-size:1.6rem;
+	border-bottom:2px solid #E8E8E8;
+}
+.tab-nav span{
+	padding-right:20px;
+	padding-bottom:12px;
+	padding-left:20px;
+	position:relative;
+	display:inline-block;
+	height:18px;
+	line-height:18px;
+	bottom:-3px;
+	cursor:pointer;
+}
+
+.tab-nav-active{
+	border-bottom-width:2px;
+	border-bottom-style:solid;border-color:#ff6000;
+}
+
+.del-btn{
+	cursor: pointer;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background:url(../images/AdminIcons.png) no-repeat -363px -47px;
+}
