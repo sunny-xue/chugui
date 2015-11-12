@@ -1,19 +1,41 @@
+.search-input{
+	width: 343px;
+}
+.search-box{
+	margin-top: 35px;
+}
+
+.top-title {
+	    height: 51px;
+    border-left: 1px solid #9F9F9F;
+    font-size: 2.5rem;
+    font-family: "SimHei";
+    color: #949494;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+
 .main-content{
-	padding-top: 12px;
 	padding-bottom: 25px;
 }
 .main-content .nav-view{
 	font-family: "SimHei";
 	font-size: 1.2rem;
+	padding-top: 10px;
 }
 
 .nav-view .head-bg{
-	width: 910px;
 	background-color: #CB531D;
-	height: 35px;
+	line-height: 35px;
 	color: #FFF;
-	display: table-cell;
 	vertical-align: middle;
+}
+
+.row{
+	margin:0px !important;
 }
 
 .nav-view input[type='checkbox']{
@@ -32,17 +54,13 @@
 }
 
 .table-data{
-	width: 910px;
+	width: 100%;
 }
 .table-data .data-line{
-	width: 910px;
+	width: 100%;
 	height: 90px;
 	padding-top: 15px;
-	margin:5px 0px;
-}
-
-.table-data .data-line:hover{
-	border:1px solid #3c3c3c;
+	margin:0px;
 }
 
 .table-data .data-line:nth-child(even){
@@ -100,10 +118,8 @@
 	font-size: 1.2rem;
 }
 .nav-view .footer-bg{
-	background-color: #949494;
 	height: 35px;
 	line-height: 15px;
-	color: #FFF;
 	margin: 15px 0px;
 	padding-top: 10px;
 	vertical-align: middle;

@@ -235,6 +235,10 @@ del {
     margin-right: 60px;
 }
 
+.margin-bottom10 {
+    margin-bottom: 10px;
+}
+
 .margin-bottom20 {
     margin-bottom: 20px;
 }
@@ -445,19 +449,19 @@ del {
     border-bottom: 1px solid #B8B3B3;
     word-spacing: -6px;
     margin-top: 25px;
+    padding:0px 68px;
 }
 
 .all-type {
     position: relative;
-    padding: 0px 68px;
 }
 
 .all-type-list {
     width: 184px;
     position: absolute;
     left: 0;
-    top: 52px;
     z-index: 30;
+    margin-top: 30px;
 }
 
 .all-type-list .menu {
@@ -479,7 +483,7 @@ del {
     border-bottom: 1px solid #efefef;
 }
 .menu dl a{
-    margin-left:0px !important;
+    margin:0px 6px !important;
 }
 .menu dt {
     width: 100px;
@@ -493,7 +497,7 @@ del {
     white-space: nowrap;
 }
 
-.all-type span {
+.nav-box span {
     border-right: 1px solid #B8B3B3;
     line-height: 14px;
     padding-right: 68px;
@@ -580,7 +584,16 @@ del {
 }
 
 .footer-logo {
-    line-height: 230px;
+     height:100%;
+}
+.footer-logo span{
+    display:inline-block;
+    height: 100%;
+    vertical-align:middle;
+}
+.footer-logo img{
+    width: 151px;
+    height: 36px;
 }
 
 .footer-detail {
