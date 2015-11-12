@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>组件</title>
+    <style type="text/css">
+    .form-txtinput {
+        border: 1px solid #CCCCCC;
+        height: 30px;
+        width: 260px;
+        text-indent: 5px;
+        border-radius: 2px;
+    }
+    
+    .form-checkbox {
+        font-size: 12px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .form-checkbox input {
+        margin-right: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .form-radio {
+        font-size: 12px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .form-radio input {
+        margin-right: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .select-box {
+        width: 120px;
+        height: 25px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+    
+    .form-submitbtn {
+        width: 80px;
+        height: 35px;
+        border-radius: 2px;
+        text-align: center;
+        background: #5cb85c;
+        border: 0px;
+        color: #FFF;
+        cursor: pointer;
+    }
+    
+    .form-submitbtn:hover {
+        background-color: #32CD32;
+    }
+    </style>
+</head>
+<form>
+    <p>
+        <input type="text" class="form-txtinput">
+    </p>
+    <p>
+        <label class="form-checkbox">
+            <input type="checkbox">复选框1
+        </label>
+        <label class="form-checkbox">
+            <input type="checkbox">复选框2
+        </label>
+    </p>
+    <p>
+        <label class="form-radio">
+            <input type="radio" name="radioGroup">单选1
+        </label>
+        <label class="form-radio">
+            <input type="radio" name="radioGroup">单选2
+        </label>
+    </p>
+    <p>
+        <select class="select-box">
+            <option value="1">选择1</option>
+            <option value="2">选择2</option>
+            <option value="3">选择3</option>
+            <option value="4">选择4</option>
+            <option value="5">选择5</option>
+        </select>
+    </p>
+    <p>
+        <input class="form-submitbtn" type="button" value="提交">
+    </p>
+</form>
+</body>
+
+</html>
