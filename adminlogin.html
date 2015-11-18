@@ -4,6 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="common.css">
     <style type="text/css">
     body {
         margin: 0px auto;
@@ -16,7 +17,7 @@
     }
     
     input {
-        border-radius: 30px;
+        border-radius: 10px;
         width: 300px;
         height: 40px;
         font-size: 16px;
@@ -26,22 +27,13 @@
         border-color: #598fab;
         border-width: 1px;
         border-style: solid;
-        text-indent: 20px;
+        text-indent: 15px;
     }
     
     input:focus {
         outline: none;
     }
     
-    .loginBtn {
-        width: 40px;
-        height: 40px;
-        text-indent: 0px;
-        cursor: pointer;
-        position: absolute;
-        top: 2px;
-        right: 0px;
-    }
     
     label {
         color: #FFF;
@@ -52,53 +44,99 @@
         height: 30px;
         line-height: 30px;
         border: 0px;
+        background-color: #2C759A;
         border-radius: 5px;
-        background-color: #FFF;
-        color: #000;
+        color: #FFF;
         text-indent: 5px;
     }
     
     .verifyCode-img {
         display: inline-block;
-        text-align:center;
-        margin-left: 10px;
+        text-align: center;
+        margin-left: 20px;
         width: 130px;
         height: 30px;
         background-color: #FFF;
         float: left;
     }
     
+    .form-checkbox {
+        display: inline-block;
+        width: auto;
+        height: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+        float: left;
+    }
+    
+    .form-checkbox input {
+        width: 20px;
+        height: 15px;
+        margin-right: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .forget-txt {
+        float: right;
+        color:#FFF;
+    }
+    
     .warning-box {
-        margin-top: 10px;
-        display: none;
+    	display: none;
+        margin-top: 20px;
         color: red;
+    }
+
+    .login-btn{
+    	border-radius: 30px;
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        background-color: #2C759A;
+        color: #FFF;
+        border-color: #598fab;
+        border-width: 1px;
+        border-style: solid;
+        text-indent: 20px;
+        cursor:pointer;
     }
     </style>
 </head>
 
 <body>
-    <div style="text-align:center; padding-top: 200px;">
+    <div style="text-align:center; padding-top: 180px;">
         <div style="text-align: center;margin-bottom: 30px;">
-            <img style="width:153px;height: 63px" src="images/logo_admin.png" title="打开平台首页">
+            <img style="width:153px;height: 63px;cursor:pointer;" src="images/logo_admin.png" title="打开平台首页">
         </div>
         <form>
             <div style="text-align: center;margin-bottom: 20px;">
                 <input type="text" placeholder="用户名">
             </div>
-            <div style="text-align: center;display: inline-block;position:relative;margin-bottom: 20px;">
+            <div style="text-align: center;">
                 <input type="password" placeholder="密码">
-                <input type="button" class="loginBtn" value="GO">
             </div>
-            <div></div>
-            <div style="display: none;">
+           
+            <div style="display: inline-block;margin-top: 20px;">
                 <div style="float:left;">
                     <label>验证码:</label>
                     <input class="verifyCode-txtinput">
                 </div>
                 <div class="verifyCode-img"></div>
             </div>
+            <div class="warning-box">请输入用户名和密码</div>
+            <div></div>
+            <div style="display: inline-block;width:280px;margin-top: 20px;">
+                <label class="form-checkbox">
+                    <input type="checkbox">记住密码
+                </label>
+                <a href="#" class="forget-txt">忘记密码?</a>
+            </div>
+            <div style="margin-top: 10px;">
+            	  <input type="button" class="login-btn" value="登陆">
+            </div>
         </form>
-        <div class="warning-box">请输入用户名和密码</div>
     </div>
 </body>
 

@@ -167,6 +167,9 @@
 .icon-iconfont-weiguanwang:before {
 	content: "\e624";
 }
+.hidden {
+	display: none;
+}
 
 body,div,p,a,span,label,input,select,textarea,ul,li,dl,dt,dd,h1,h2{margin:0px;padding:0px;}
 body{font-size:12px;font-family:Microsoft YaHei;color:#666;}
@@ -183,25 +186,27 @@ button{outline:none;}
 select{outline:none;}
 textarea{outline:none;}
 .clear{clear:both;}
-/**�������������Ӧ���ֵ�ͨ����*/
+/**锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟接︼拷锟斤拷值锟酵拷锟斤拷锟�/
 .cell {
     display: table-cell;
     width: 9999px;
     *display: inline-block;
     *width: auto;
 }
-/**�����ı�����ʽ*/
+/**锟斤拷锟斤拷锟侥憋拷锟斤拷锟斤拷式*/
 .require-input{transition:border linear .2s,box-shadow linear .5s;-moz-transition:border linear .2s,-moz-box-shadow linear .5s;-webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;border-color:rgba(233,50,45,.75);box-shadow:0 0 6px rgba(250,190,190,.105);-moz-box-shadow:0 0 6px rgba(250,190,190,.5);-webkit-box-shadow:0 0 6px rgba(250,190,190,3);}
-/**������*/
+/**锟斤拷锟斤拷锟斤拷*/
 .drop-list{width:400px;height:38px;line-height:38px;background:#f9f9f7;border:1px solid #ccc;border-radius:2px;float:left;color:#5d5d5d;}
-/**��ɫ��ť**/
+/**锟斤拷色锟斤拷钮**/
 .green-btn{display:inline-block;width:80px;height:36px;border-radius:2px;text-align:center;line-height:36px;background:#5cb85c;border:1px solid #4cae4c;color:#fff;}
-/**��ɫ��ť**/
+/**锟斤拷色锟斤拷钮**/
 .white-btn{display:inline-block;width:80px;height:36px;border-radius:2px;text-align:center;line-height:36px;background:#f9f9f7;border:1px solid #e1e1e1;color:#333;}
+.white-btn:hover{background:#5cb85c;border:1px solid #4cae4c;color:#fff;}
 
-/*ͷ��*/
+/*头锟斤拷*/
 .head{width:100%;height:60px;line-height:60px;background:#393939;position:fixed;top:0px;left:0px;z-index:2;}
 .headL{float:left;font-size:16px;color:#aeb2b7;padding-left:20px;}
+.headL a{float:left;font-size:16px;color:#aeb2b7;}
 .headR{float:right;overflow:hidden;}
 .headR li{float:left;}
 .headR li a{height:60px;display:block;overflow:hidden;}
@@ -214,7 +219,7 @@ textarea{outline:none;}
 .userName span{width:30px;height:30px;line-height:30px;text-align:center;float:left;background:url(../images/AdminIcons.png) -221px -47px;margin:15px 10px 0px 15px;font-size:18px;color:#da4c31;}
 .userName label{float:left;color:#aaa;}
 .userName b{width:8px;height:4px;float:left;background:url(../images/AdminIcons.png) -449px -1px;margin:29px 0px 0px 10px;}
-/*�˵���*/
+/*锟剿碉拷锟斤拷*/
 #menu{
 	width:220px;
 	position: fixed;
@@ -251,11 +256,11 @@ textarea{outline:none;}
 #menu ul li a b{width:16px;height:16px;float:left;margin:17px 12px 0px 20px;}
 #menu ul li a span{float:left;font-size:14px;color:#aeb2b7;}
 #menu ul li a label{width:11px;height:11px;float:right;margin:20px 20px 0px 0px;color: #aeb2b7;font-size: 18px;}
-/*��꾭��label��ɫ   {width:11px;height:11px;float:right;background:url(../images/AdminIons.png) no-repeat -247px -200px;}
-�����˵�չ��label��ͼ��  {width:11px;height:11px;float:right;background:url(../images/AdminIons.png) no-repeat -289px -200px;}
-չ��ʱ��꾭��label��ɫ  {width:11px;height:11px;float:right;background:url(../images/AdminIons.png) no-repeat -266px -200px;}*/
+/*锟斤拷昃拷锟絣abel锟斤拷色   {width:11px;height:11px;float:right;background:url(../images/AdminIons.png) no-repeat -247px -200px;}
+锟斤拷锟斤拷锟剿碉拷展锟斤拷label锟斤拷图锟斤拷  {width:11px;height:11px;float:right;background:url(../images/AdminIons.png) no-repeat -289px -200px;}
+展锟斤拷时锟斤拷昃拷锟絣abel锟斤拷色  {width:11px;height:11px;float:right;background:url(../images/AdminIons.png) no-repeat -266px -200px;}*/
 #menu ul li dl{background:#282823;display: none;}
-/*��꾭�� dl dd a span{color:#ce4c38;}*/
+/*锟斤拷昃拷锟�dl dd a span{color:#ce4c38;}*/
 .menuBottom{height:40px;position:fixed;bottom:0px;left:0px;background:#393939;}
 .menuBottom .border{width:220px;border-top:1px solid #111415;border-bottom:1px solid #646668;}
 .bottomBtns{padding:0px 20px;}
@@ -268,7 +273,7 @@ textarea{outline:none;}
 #btnFold label{width:44px;background:url(../images/AdminIcons.png) no-repeat -59px -129px;margin:-56px 0px 0px 9px;}
 #btnHelp label{width:72px;background:url(../images/AdminIcons.png) no-repeat -111px -129px;margin:-55px 0px 0px -5px;}
 #btnSet label{width:72px;background:url(../images/AdminIcons.png) no-repeat -111px -129px;margin:-55px 0px 0px -5px;}
-/*�˵����۵�*/
+/*锟剿碉拷锟斤拷锟桔碉拷*/
 #menu2{width:80px;height:100%;background:#393939;position:fixed;bottom:0px;left:0px;z-index:1;}
 #menu2 ul{height:100%;overflow-y:auto;overflow-x:hidden;}
 #menu2 ul li.empty{height:60px;}
@@ -283,13 +288,13 @@ textarea{outline:none;}
 .bottom2Btns{padding:0px 5px;}
 .bottom2Btns a{width:60px;height:38px;float:right;}
 .bottom2Btns a b{width:12px;height:12px;display:block;}
-/*����*/
+/*锟斤拷锟斤拷*/
 .main{width:100%;height:100%;position:fixed;top:0px;left:0px;background:#f9f9f7;}
 .navBar{width:100%;border-bottom:1px solid #e1e1e1;margin-top:60px;}
 #conter{width:100%;overflow:auto;}
 #listBox{margin-top:15px;}
 #navL{float:left;overflow:hidden;}
-/*�ҵ��˻�����*/
+/*锟揭碉拷锟剿伙拷锟斤拷锟斤拷*/
 .myAccount{width:200px;background:#f9f9f7;border:1px solid #e1e1e1;box-shadow:-3px 3px 5px rgba(0,0,0,0.10);position:absolute;top:60px;right:15px;z-index:3;}
 .accountTitle{height:40px;line-height:40px;text-indent:30px;font-size:14px;color:#333;background:#f9f9f7;border-bottom:1px solid #e1e1e1;overflow:hidden;}
 .accountTitle b{width:18px;height:18px;float:right;background:url(../images/AdminIcons.png) no-repeat -268px -74px;margin:11px 10px 0px 0px;cursor:pointer;}
@@ -299,13 +304,13 @@ textarea{outline:none;}
 .myAccount ul li a:hover{background:#f2f2ea;color:#d14836;}
 .myAccount ul li a b{width:13px;height:13px;float:left;margin:10px 8px 0px 30px;}
 .set b{background:url(../images/AdminIcons.png) no-repeat -471px -177px;}
-/*.set��꾭�� .set b{background:url(../images/AdminIcons.png) no-repeat -443px -177px;}*/
+/*.set锟斤拷昃拷锟�.set b{background:url(../images/AdminIcons.png) no-repeat -443px -177px;}*/
 .help b{background:url(../images/AdminIcons.png) no-repeat -188px -200px;}
-/*.help��꾭�� .help b{background:url(../images/AdminIcons.png) no-repeat -209px -177px;}*/
+/*.help锟斤拷昃拷锟�.help b{background:url(../images/AdminIcons.png) no-repeat -209px -177px;}*/
 .myAccount .border{height:auto;border-bottom:1px solid #fff;}
 .btnOut{width:78px;height:28px;line-height:28px;text-align:center;background:#d84c31;border:1px solid #c94432;border-radius:2px;color:#fff;display:block;margin:10px 0px 10px 105px;}
 
-/*��ͼ��ĵ���**/
+/*锟斤拷图锟斤拷牡锟斤拷锟�*/
 .navBar .title-txt{line-height:48px;font-size:20px;color:#5c6371;float:left;}
 .navBar ul{float:right;margin-right:30px;overflow:hidden;}
 .navBar ul li{float:left;}
@@ -315,18 +320,18 @@ textarea{outline:none;}
 .navBar ul li a span{float:left;font-size:14px;color:#8a959e;}
 .navBar .border{height:30px;border-left:1px solid #e5e5e5;border-right:1px solid #fff;margin:9px 20px 0px;}
 
-/**���Ӱ�ť**/
+/**锟斤拷锟接帮拷钮**/
 .btnAdd b{width:14px;height:14px;background:url(../images/AdminIcons.png) no-repeat -298px -22px;margin:10px 5px 0px 0px;}
-/**���˰�ť*/
+/**锟斤拷锟剿帮拷钮*/
 .btnFilter b{width:19px;height:12px;background:url(../images/AdminIcons.png) no-repeat -382px 0px;margin:11px 5px 0px 0px;}
-/**��ఴť**/
+/**锟斤拷喟磁�*/
 .btnMore b{width:12px;height:8px;background:url(../images/AdminIcons.png) no-repeat -358px 0px;margin:13px 5px 0px 0px;}
-/**������ť**/
+/**锟斤拷锟斤拷锟斤拷钮**/
 .btnSearch b{width:18px;height:18px;background:url(../images/AdminIcons.png) no-repeat -330px 0px;margin:8px 0px 0px 0px;}
-/**������ť**/
+/**锟斤拷锟斤拷锟斤拷钮**/
 .btnSearch b{width:18px;height:18px;background:url(../images/AdminIcons.png) no-repeat -330px 0px;margin:8px 0px 0px 0px;}
 
-/*�Ҳ�*/
+/*锟揭诧拷*/
 .userBox{padding:15px;margin-bottom:15px;background:#fbfbfb;border:1px solid #e1e1e1;box-shadow:0px 0px 3px #eee,inset 0px 0px 3px #fff;}
 .name{margin-bottom:15px;border-bottom:1px solid #e1e1e1;padding-bottom:15px;}
 .name span{width:50px;height:50px;background:url(../images/AdminIcons.png) no-repeat -160px -47px;float:left;text-align:center;line-height:50px;font-size:24px;color:#d84c31;}
@@ -346,7 +351,7 @@ textarea{outline:none;}
 .messTitle b{width:25px;height:17px;background:url(../images/AdminIcons.png) no-repeat -413px 0px;float:left;margin:3px 10px 0px 0px;}
 .messTitle span{font-size:18px;color:#646b75;float:left;}
 .messCont b{width:128px;height:62px;background:url(../images/AdminIcons.png) no-repeat -10px -46px;display:block;margin:30px auto 20px;}
-/*ɸѡ���*/
+/*筛选锟筋弹锟斤拷*/
 .filterMain{width:600px;height:100%;background:#f9f9f7;border-left:1px solid #e1e1e1;box-shadow:0px 0px 15px rgba(0,0,0,0.10);position:fixed;top:60px;right:0px;overflow-y:auto;}
 .filterTitle{height:58px;line-height:58px;color:#333;font-size:16px;text-indent:20px;border-bottom:1px solid #e5e5e5;}
 .filterTitle span{width:18px;height:18px;float:right;background:url(../images/AdminIcons.png) no-repeat -268px -74px;margin:20px 25px 0px 0px;cursor:pointer;}
@@ -360,22 +365,22 @@ textarea{outline:none;}
 .filterCont input:hover{background:#fff;}
 .date a{width:17px;height:14px;position:absolute;background:url(../images/AdminIcons.png) no-repeat -457px -77px;float:left;margin:12px 0px 0px -25px;}
 
-/*��Ʒ����"���"����*/
+/*锟斤拷品锟斤拷锟斤拷"锟斤拷锟�锟斤拷锟斤拷*/
 .more{width:150px;padding:10px 5px;background:#fbfbfb;border:1px solid #e1e1e1;position:absolute;right:0px;top:0px;margin:110px 70px 0px 0px;z-index:3;}
 .more dd{width:150px;height:40px;margin:0px auto;}
 .navBar .more dd a{width:100%;height:100%;line-height:40px;overflow:hidden;display:block;font-size:14px;color:#8a959e;margin:0px;padding:0px;}
 .more dd a:hover{background:#f2f2ea;}
 .more dd a b{width:16px;height:16px;float:left;margin:12px 10px 0px 20px;}
 
-/**��������**/
+/**锟斤拷锟斤拷锟斤拷锟斤拷**/
 .context{position: relative;}
 /**.list-box{margin-left:235px;margin-right:360px;}**/
 .list-box{margin-left:235px;}
-/**�б�ͷ��������**/
+/**锟叫憋拷头锟斤拷锟斤拷锟斤拷锟斤拷**/
 .tab-nav{margin-right: 15px;border:1px solid #e1e1e1;background:#fbfbfb;}
 .tab-nav .nav-list{overflow:hidden;border-bottom:1px solid #e1e1e1;margin:0px 15px;padding-top:10px;}
 .nav-list p{font-size:18px;color:#646b75;text-indent:5px;float:left;}
-/**��������ʽ**/
+/**锟斤拷锟斤拷锟斤拷锟斤拷式**/
 .nav-list .check{float:left;margin-left:80px;overflow:hidden;}
 .nav-list .check a{margin-right:60px;font-size:16px;color:#8a959e;float:left;padding-bottom:12px;margin-top:4px;}
 .nav-list .check a:hover{color:#323a45;}
@@ -383,7 +388,7 @@ textarea{outline:none;}
 .nav-list .filter-box{float: right; padding-top: 10px;}
 .nav-list .filter-box select{float:right;width:auto !important;background:#fbfbfb !important;border:none !important;color:#666 !important;}
 
-/**�б�*/
+/**锟叫憋拷*/
 .list-comp{margin: 15px 20px 0px;}
 .list-comp .list-table{margin:0px 0px;}
 .list-table .list-header-row{height:40px;line-height:40px;padding-left: 20px;background:#f9f9f7;font-size:14px;color:#d84c31;overflow:hidden;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;}
@@ -400,15 +405,15 @@ textarea{outline:none;}
 .listBtns{float:right;overflow:hidden;}
 .listBtns a{width:16px;height:16px;float:right;margin:22px 15px 0px 0px;}
 
-/*��ҳҳ����ʽ*/
+/*锟斤拷页页锟斤拷锟斤拷式*/
 .pagesList{height:40px;padding:10px 0px;}
 .pagesCont{width:630px;height:40px;padding:10px 0px;margin:0px auto;}
 .pagesCont a{height:28px;line-height:28px;border:1px solid #c1c1c1;border-radius:5px;font-size:14px;color:#666;float:left;padding:0px 11px;margin-right:8px;}
 .pagesCont .pagesPrev{width:28px;background:url(../images/AdminIcons.png) no-repeat -144px -170px;padding:0px;}
-/*.pagesCont .pagesNext �㲻��ʱ���ɫ{background:url(../images/AdminIcons.png) no-repeat -186px -170px;}*/
+/*.pagesCont .pagesNext 锟姐不锟斤拷时锟斤拷锟缴珄background:url(../images/AdminIcons.png) no-repeat -186px -170px;}*/
 .pagesCont .pagesPrev:hover{background:#d94c30 url(../images/AdminIcons.png) no-repeat -165px -170px;}
 .pagesCont .pagesNext{width:28px;background:url(../images/AdminIcons.png) no-repeat -249px -170px;padding:0px;}
-/*.pagesCont .pagesNext �㲻��ʱ���ɫ{background:url(../images/AdminIcons.png) no-repeat -207px -170px;}*/
+/*.pagesCont .pagesNext 锟姐不锟斤拷时锟斤拷锟缴珄background:url(../images/AdminIcons.png) no-repeat -207px -170px;}*/
 .pagesCont .pagesNext:hover{background:#d94c30 url(../images/AdminIcons.png) no-repeat -228px -170px;}
 .pagesCont label{line-height:28px;float:left;padding:0px 2px 0px 2px;}
 .pagesCont select{width:auto;height:28px;line-height:28px;float:left;padding:1px 3px;border:1px solid #c1c1c1;border-radius:5px;text-align:center;margin:0px 3px;background:#fbfbfb;}
@@ -417,9 +422,9 @@ textarea{outline:none;}
 .pagesList a:hover{background:#d94c30;color:#fff;border:1px solid #cc402b;}
 .pagesList .active{background:#d94c30;color:#fff;border:1px solid #cc402b;}
 .loadMore{width:150px;height:38px;line-height:38px;text-align:center;background:#f9f9f7;border:1px solid #e1e1e1;border-radius:3px;font-size:14px;color:#666;display:block;margin:50px auto 40px;}
-/*������ʾ */
+/*锟斤拷锟斤拷锟斤拷示 */
 .error{transition:border linear .2s,box-shadow linear .5s;-moz-transition:border linear .2s,-moz-box-shadow linear .5s;-webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;border-color:rgba(233,50,45,.75);box-shadow:0 0 6px rgba(250,190,190,.105);-moz-box-shadow:0 0 6px rgba(250,190,190,.5);-webkit-box-shadow:0 0 6px rgba(250,190,190,3);}
-/*�༭�����*/
+/*锟洁辑锟斤拷锟斤拷锟�/
 .panel{width:900px;height:100%;background:#f9f9f7;border-left:1px solid #e1e1e1;box-shadow:0px 0px 15px rgba(0,0,0,0.10);position:fixed;top:60px;right:0px;overflow-y:auto;}
 .panel .title{height:58px;line-height:58px;color:#333;font-size:16px;text-indent:50px;border-bottom:1px solid #e5e5e5;}
 .panel .title span{width:18px;height:18px;float:right;background:url(../images/AdminIcons.png) no-repeat -268px -74px;margin:20px 25px 0px 0px;cursor:pointer;}
@@ -434,7 +439,7 @@ label .error{width:15px;height:15px;float:left;background:url(../images/AdminIco
 .panel .content ul li input:hover{background:#fff;}
 .panel .content ul li select{width:400px;height:38px;line-height:38px;background:#f9f9f7;border:1px solid #ccc;border-radius:2px;float:left;color:#5d5d5d;}
 .panel .content ul li b{float:left;line-height:38px;font-weight:normal;color:#999;margin-left:10px;}
-/*�鿴�������*/
+/*锟介看锟斤拷锟斤拷锟斤拷锟�/
 .details{width:900px;height:100%;background:#f9f9f7;border-left:1px solid #e1e1e1;box-shadow:0px 0px 15px rgba(0,0,0,0.10);position:fixed;top:60px;right:0px;overflow-y:auto;display: none;}
 .detailsTitle{height:58px;line-height:58px;color:#333;font-size:16px;text-indent:20px;border-bottom:1px solid #e5e5e5;}
 .detailsTitle span{width:18px;height:18px;float:right;background:url(/Admin/Images/AdminIcons.png) no-repeat -268px -74px;margin:20px 25px 0px 0px;cursor:pointer;}
@@ -468,7 +473,7 @@ label .error{width:15px;height:15px;float:left;background:url(../images/AdminIco
 .sendNum input{width:370px;height:14px;line-height:14px;padding:7px 0px 7px 8px;background:#f9f9f7;border:1px solid #ccc;border-radius:3px;float:left;color:#545454;}
 .sendNum input:hover{background:#fff;}
 .btnSend{width:82px;height:28px;line-height:28px;text-align:center;background:#5cb85c;border:1px solid #4daf4d;border-radius:3px;color:#fff;display:block;margin:20px 0px 0px 120px;}
-/**���ı��༭��**/
+/**锟斤拷锟侥憋拷锟洁辑锟斤拷**/
 .rich-edit{width:700px;height:430px;float:left;}
 
 .tips{border-top:1px solid #fff;overflow:hidden;}
@@ -496,8 +501,8 @@ label .error{width:15px;height:15px;float:left;background:url(../images/AdminIco
 
 .down-btn{background:url(../images/AdminIcons.png) no-repeat -235px 0px;}
 .down-btn:hover{background:url(../images/AdminIcons.png) no-repeat -293px -47px;}
-.up-btn{background:url(../images/AdminIcons.png) no-repeat -354px -177px;}/*�ϼ�ʱ��ͼ��*/
-.up-btn:hover{background:url(../images/AdminIcons.png) no-repeat -387px -177px;}/*�ϼ�ʱ����꾭��Ч��*/
+.up-btn{background:url(../images/AdminIcons.png) no-repeat -354px -177px;}/*锟较硷拷时锟斤拷图锟斤拷*/
+.up-btn:hover{background:url(../images/AdminIcons.png) no-repeat -387px -177px;}/*锟较硷拷时锟斤拷锟斤拷昃拷锟叫э拷锟�/
 
 .refresh-btn{background:url(../images/AdminIcons.png) no-repeat -134px -259px;}
 .refresh-btn:hover{background:url(../images/AdminIcons.png) no-repeat -164px -259px;}
@@ -514,11 +519,11 @@ label .error{width:15px;height:15px;float:left;background:url(../images/AdminIco
 .look-btn:hover{background:url(/Admin/Images/AdminIcons.png) no-repeat -219px -319px;}
 
 
-/**·��ѡ��ť**/
+/**路锟斤拷选锟斤拷钮**/
 .file-comp{display: inline-block; width: 395px;white-space: nowrap;}
-.file-comp input[type="text"]{width: 290px !important;margin-right: 5px;}
+.file-comp input[type="text"]{width: 290px !important;margin-right: 5px;float: left;padding: 11px 0px 11px 5px;}
 .file-comp #filePicker{display: inline-block;}
-.webuploader-container {position: relative;}
+.webuploader-container {position: relative;display: inline-block;}
 .webuploader-element-invisible {position: absolute !important;clip: rect(1px 1px 1px 1px); /* IE6, IE7 */clip: rect(1px,1px,1px,1px);}
 .webuploader-pick {width:100%;height: 100%;position: relative;display: inline-block;cursor: pointer;background: #00b7ee;padding: 10px 15px;color: #fff;text-align: center;border-radius: 3px;	overflow: hidden;}
 .webuploader-pick-hover {background: #00a2d4;}
@@ -527,10 +532,10 @@ label .error{width:15px;height:15px;float:left;background:url(../images/AdminIco
 
 #navL b{width:19px;height:18px;float:left;background:url(../images/AdminIcons.png) no-repeat -182px -228px;margin:15px 10px 0px 0px;}
 
-/*�Ҳ�*/
+/*锟揭诧拷*/
 .contR{width:330px;position: absolute;top:15px; right: 15px;}
 .more1 b{background:url(../images/AdminIcons.png) no-repeat -357px -77px;}
-/*ȷ��ɾ��*/
+/*确锟斤拷删锟斤拷*/
 .delete{width:310px;background:#fbfbfb;border:1px solid #e1e1e1;box-shadow:-3px 3px 5px rgba(0,0,0,0.10);position:absolute;top:110px;right:0px;z-index:4;}
 .delTitle{height:40px;line-height:40px;text-indent:30px;font-size:14px;color:#333;background:#f9f9f7;border-bottom:1px solid #e1e1e1;overflow:hidden;}
 .delTitle b{width:18px;height:18px;float:right;background:url(../images/AdminIcons.png) no-repeat -268px -74px;margin:11px 10px 0px 0px;cursor:pointer;}
@@ -538,9 +543,9 @@ label .error{width:15px;height:15px;float:left;background:url(../images/AdminIco
 .delCont p{width:250px;line-height:18px;color:#333;margin:30px 0px;}
 .delCont a{width:106px;height:36px;line-height:36px;text-align:center;background:#d84c31;border:1px solid #c94432;border-radius:2px;display:block;color:#fff;margin-bottom:10px;}
 
-/**���Ӱ�ť**/
+/**锟斤拷锟接帮拷钮**/
 .addBtn{width:14px;height:14px;background:url(../images/AdminIcons.png) no-repeat -298px -22px;margin:10px 5px 0px 0px;overflow: hidden;cursor: pointer;}
-/**ɾ��ť**/
+/**删锟斤拷钮**/
 .remove{width: 18px;height: 18px;background: url(../images/AdminIcons.png) no-repeat -268px -74px;margin: 10px 5px 0px 0px;overflow: hidden;cursor: pointer;}
 
 /* ---------- Dialog ---------- */
@@ -630,7 +635,6 @@ label .error{width:15px;height:15px;float:left;background:url(../images/AdminIco
 	padding: 110px 160px 0px 160px;
 	margin: 60px auto 0px auto;
 	overflow: hidden;
-	background: url(../images/login.png) 0px 0px no-repeat;
 }
 
 .login table {
