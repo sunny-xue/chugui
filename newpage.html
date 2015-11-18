@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<title></title>
+
+<link href="common.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+#navL b{width:20px;height:20px;float:left;background:url(/Admin/Images/AdminIcons.png) no-repeat 0px -227px;margin:15px 10px 0px 0px;}
+#navL span{line-height:48px;font-size:20px;color:#5c6371;float:left;}
+.navBar ul{float:right;margin-right:30px;overflow:hidden;}
+.navBar ul li{float:left;}
+.navBar ul li a{height:34px;line-height:34px;padding:0px 10px;margin-top:7px;display:block;border-radius:2px;}
+.navBar ul li a:hover{background:#f2f2ea;}
+.navBar ul li a b{float:left;}
+.navBar ul li a span{float:left;font-size:14px;color:#8a959e;}
+.navBar .border{height:30px;border-left:1px solid #e5e5e5;border-right:1px solid #fff;margin:9px 20px 0px;}
+#add b{width:14px;height:14px;background:url(/Admin/Images/AdminIcons.png) no-repeat -298px -22px;margin:10px 5px 0px 0px;}
+#filter b{width:19px;height:12px;background:url(/Admin/Images/AdminIcons.png) no-repeat -382px 0px;margin:11px 5px 0px 0px;}
+#more b{width:12px;height:8px;background:url(/Admin/Images/AdminIcons.png) no-repeat -358px 0px;margin:13px 5px 0px 0px;}
+#search b{width:18px;height:18px;background:url(/Admin/Images/AdminIcons.png) no-repeat -330px 0px;margin:8px 0px 0px 0px;}
+/*账户设置margin:15px 360px 0px 235px;*/
+.account{border:1px solid #e1e1e1;background:#fbfbfb;padding:10px 30px;}
+.headImg{padding:10px 0px;border-bottom:1px solid #eee;}
+.userImg span{width:80px;height:80px;line-height:80px;text-align:center;background:#e7e7df;border-radius:50%;float:left;font-size:38px;color:#d14836;cursor:pointer;}
+.userImg span:hover{opacity:0.7;}
+.userImg p {line-height: 80px;font-size: 14px;color: #333;float: left;margin-left: 10px;}
+.btnHead{width:118px;height:36px;line-height:36px;text-align:center;background:#f9f9f7;border:1px solid #e1e1e1;border-radius:3px;display:block;font-size:14px;color:#333;margin-top:10px;}
+
+.tab-div{padding:20px 0px;border-bottom:1px solid #eee;}
+.tab-div p{font-size:14px;color:#363636;margin-bottom:20px;}
+.item-div {padding-left: 30px;}
+.item-div span{width:90px;line-height:48px;float:left;color:#363636;}
+.item-div input[type=text],input[type=password]{width:350px;height:35px;margin-top:10px;border:1px solid #ccc;border-radius:3px;font-size:12px;color:#ccc;text-indent: 5px;}
+
+    .form-checkbox {
+        display: inline-block;
+        width:110px;
+        height: 30px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .form-checkbox input {
+        margin-right: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .form-radio {
+         display: inline-block;
+        width:110px;
+        height: 30px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .form-radio input {
+        margin-right: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+.submit-btn{margin-left: 20px; margin-top: 20px;}
+.cancel-btn{margin-left: 300px; margin-top: 20px;}
+</style>
+
+</head>
+<body>
+
+<div style="height:800px;">    
+    <div class="navBar">
+        <div id="navL" style="margin-left:235px;"><b></b><span>账户设置</span></div>
+        <div class="clear"></div>
+    </div>
+    <form id="inputForm" action="update.jhtml" method="post">
+    <div id="conter">
+        <div id="listBox" style="margin-left:235px;margin-right:15px;">
+            <div class="account">
+                <div class="headImg">
+                    <div class="userImg"><span>虫</span><p>你可以选择png/jpg图片（180*180）作为头像</p><div class="clear"></div></div>
+                    <a href="javascript:;" class="btnHead">修改头像</a>
+                </div>
+                <div class="tab-div">
+                    <p>修改个人资料</p>
+                    <div class="item-div">
+                    	<span>用户名：</span>
+                    	<span>XXXXXXXXX</span>
+                    	<div class="clear"></div>
+                    </div>
+                    <div class="item-div">
+                    	<span>姓名：</span>
+                    	<span>XXXXXX</span>
+                    	<div class="clear"></div>
+                    </div>
+                    <div class="item-div">
+                    	<span>用户名：</span>
+                    	<span>XXXXXX</span>
+                    	<div class="clear"></div>
+                    </div>
+                    <div class="item-div">
+                    	<span>邮箱：</span>
+                    	<input type="text" name="email" class="text" value="XXXXXX" maxlength="200" />
+                    	<div class="clear"></div>
+                    </div>
+                </div>
+                <div class="tab-div">
+                        <P>修改密码</P>
+                        <div class="item-div">
+                            <span>当前密码：</span>
+                            <input type="password" class="text" value="XXXXXX" maxlength="200" />
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-div">
+                            <span>新密码：</span>
+                            <input type="password" class="text" value="XXXXXX" maxlength="200" />
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-div">
+                            <span>确认新密码：</span>
+                            <input type="password" class="text" value="XXXXXX" maxlength="200" />
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-div" style="margin-top:10px;">
+                            <span>其他：</span>
+                            <select class="drop-list" style="width:350px;">
+                                <option value="001">001
+                                </option>
+                                <option value="002">002
+                                </option>
+                                <option value="003">003
+                                </option>
+                            </select>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-div">
+                            <span>多选：</span>
+                            <div style="padding-top:15px; width:350px;display:inline-block;">
+                                  <label class="form-checkbox">
+                                <input type="checkbox">复选框1
+                            </label>
+                             <label class="form-checkbox">
+                                <input type="checkbox">复选框1
+                            </label>
+                             <label class="form-checkbox">
+                                <input type="checkbox">复选框1
+                            </label>
+                             <label class="form-checkbox">
+                                <input type="checkbox">复选框1
+                            </label>
+                             <label class="form-checkbox">
+                                <input type="checkbox">复选框1
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框1
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框1
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框2
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框2
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框2
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框2
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框2
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox">复选框2
+                            </label>
+                            </div>
+                          <div class="clear"></div>
+                        </div>
+                        <div class="item-div">
+                            <span>单选：</span>
+                            <div style="padding-top:15px; width:350px;display:inline-block;">
+                                 <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                             <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选1
+                             </label>
+                            <label class="form-radio">
+                            <input type="radio" name="radioGroup">单选2
+                            </label>
+                            </div>
+                          <div class="clear"></div>
+                        </div>
+                </div>
+                <div>
+                <input type="button" class="white-btn cancel-btn" value="取消">
+                  <input type="button" class="green-btn submit-btn" value="确认修改">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>
