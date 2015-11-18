@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>登陆</title>
+    <style type="text/css">
+    body {
+        margin: 0px auto;
+        padding: 0px;
+        background: url(images/bg.png) repeat-x #328eb4;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-family: "微软雅黑";
+    }
+    
+    input {
+        border-radius: 30px;
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        background-color: #2C759A;
+        color: #FFF;
+        border-color: #598fab;
+        border-width: 1px;
+        border-style: solid;
+        text-indent: 20px;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    .loginBtn {
+        width: 40px;
+        height: 40px;
+        text-indent: 0px;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        right: 0px;
+    }
+    
+    label {
+        color: #FFF;
+    }
+    
+    .verifyCode-txtinput {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #FFF;
+        color: #000;
+        text-indent: 5px;
+    }
+    
+    .verifyCode-img {
+        display: inline-block;
+        text-align:center;
+        margin-left: 10px;
+        width: 130px;
+        height: 30px;
+        background-color: #FFF;
+        float: left;
+    }
+    
+    .warning-box {
+        margin-top: 10px;
+        display: none;
+        color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center; padding-top: 200px;">
+        <div style="text-align: center;margin-bottom: 30px;">
+            <img style="width:153px;height: 63px" src="images/logo_admin.png" title="打开平台首页">
+        </div>
+        <form>
+            <div style="text-align: center;margin-bottom: 20px;">
+                <input type="text" placeholder="用户名">
+            </div>
+            <div style="text-align: center;display: inline-block;position:relative;margin-bottom: 20px;">
+                <input type="password" placeholder="密码">
+                <input type="button" class="loginBtn" value="GO">
+            </div>
+            <div></div>
+            <div style="display: none;">
+                <div style="float:left;">
+                    <label>验证码:</label>
+                    <input class="verifyCode-txtinput">
+                </div>
+                <div class="verifyCode-img"></div>
+            </div>
+        </form>
+        <div class="warning-box">请输入用户名和密码</div>
+    </div>
+</body>
+
+</html>
