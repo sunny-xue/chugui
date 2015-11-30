@@ -163,6 +163,10 @@ del {
     text-align: left;
 }
 
+.hide{
+    display: none;
+}
+
 .of {
     overflow: hidden;
 }
@@ -235,10 +239,6 @@ del {
     margin-right: 60px;
 }
 
-.margin-bottom10 {
-    margin-bottom: 10px;
-}
-
 .margin-bottom20 {
     margin-bottom: 20px;
 }
@@ -253,6 +253,10 @@ del {
 
 .padding-top10 {
     padding-top: 10px;
+}
+
+.padding-left5 {
+    padding-left: 5px;
 }
 
 .padding-left10 {
@@ -461,7 +465,8 @@ del {
     position: absolute;
     left: 0;
     z-index: 30;
-    margin-top: 30px;
+      height: 300px;
+    overflow-y: auto;
 }
 
 .all-type-list .menu {
@@ -525,6 +530,7 @@ del {
 /****右边导航****/
 
 .page-title {
+    height:30px;
     font-family: "微软雅黑";
     font-size: 1.2rem;
 }
@@ -534,7 +540,6 @@ del {
 }
 
 .page-content {
-    padding-top: 12px;
     font-family: "SimHei";
     font-size: 1.2rem;
 }
@@ -584,8 +589,9 @@ del {
 }
 
 .footer-logo {
-     height:100%;
+    height:230px;
 }
+
 .footer-logo span{
     display:inline-block;
     height: 100%;
@@ -671,4 +677,93 @@ del {
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
+}
+
+/* ---------- Message ---------- */
+
+.xxMessage {
+    padding: 10px 30px;
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 25%;
+    _top: expression(documentElement.scrollTop + Math.round(documentElement.offsetHeight * 0.25));
+    left: 50%;
+    z-index: 100;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 1px 6px #999999;
+    -moz-box-shadow: 1px 1px 6px #999999;
+    box-shadow: 1px 1px 6px #999999;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5, direction=0, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4, direction=90, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4, direction=180, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5, direction=270, strength=3)";
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5, direction=0, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4, direction=90, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4, direction=180, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5, direction=270, strength=3);
+    border: 1px solid #999999;
+    background-color: #ffffff;
+}
+
+.xxMessage .messageContent {
+    line-height: 24px;
+    padding: 0px 10px 0px 30px;
+    color: #666666;
+}
+
+.xxMessage .messagewarnIcon {
+    background: url(../images/common.gif) -60px -360px no-repeat;
+}
+
+.xxMessage .messagesuccessIcon {
+    background: url(../images/common.gif) -30px -390px no-repeat;
+}
+
+.xxMessage .messageerrorIcon {
+    background: url(../images/common.gif) 0px -420px no-repeat;
+}
+
+.xxMessage .messageIframe {
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    z-index: -10;
+}
+
+/* ---------- Loading ---------- */
+
+span.loadingIcon {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    background: url(../images/loading_icon.gif) center no-repeat;
+}
+
+span.loadingBar {
+    width: 208px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    background: url(../images/loading_bar.gif) center no-repeat;
+}
+/* ---------- Progress ---------- */
+
+.progressBar {
+    width: 0px;
+    height: 2px;
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0px;
+    _top: expression(documentElement.scrollTop);
+    left: 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.3);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#d9f7ff, direction=180, strength=6)";
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#d9f7ff, direction=180, strength=6);
+    -webkit-transition: width linear 0.3s;
+    transition: width linear 0.3s;
+    background-color: #bdebff;
 }
