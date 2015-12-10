@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>商品评论</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/review.css">
+</head>
+
+<body>
+    <div id="detailBox">
+        <div class="db-showpanel">
+            <a href="${goods.url}">
+                <img src="${goods.thumbnail!setting.defaultThumbnailProductImage}"></a>
+        </div>
+        <div class="db-icbu">
+            <ol class="ui-form-bd">
+                <li class="ui-form-row">
+                    <label class="ui-form-label">
+                        <h3>${abbreviate(goods.name, 50, "...")}</h3>
+                    </label>
+                </li>
+                <li class="ui-form-row superstar-price">
+                    <label class="ui-form-label">${message("Goods.price")}</label>
+                    <div class="ui-form-right"> <strong>${currency(goods.price, true, true)}</strong>
+                        <span></span> 元
+                    </div>
+                </li>
+                <li class="ui-form-row">
+                    <label class="ui-form-label">配送</label>
+                    <div class="ui-form-right">
+                        快递:&nbsp; 0.00
+                    </div>
+                </li>
+                <li class="ui-form-row salesvol">
+                    <label class="ui-form-label">月销量</label>
+                    <div class="ui-form-right"> <strong>773</strong> 件
+                    </div>
+                </li>
+                [#if goods.scoreCount > 0]
+                <li class="ui-form-row evalate">
+                    <label class="ui-form-label">${message("Goods.score")}</label>
+                    <div class="ui-form-right"> <em class="superstar-tb-star" id="superstar-ratestar"><em> <i style="width: 56.4px;"></i></em>
+                        <span>${goods.score?string("0.0")}分</span></em>
+                        <span>
+                                (累计评价
+                                <span class="superstar-ratetotal">447</span> )
+                        </span>
+                    </div>
+                </li>
+                [#if]
+                [#if setting.isShowMarketPrice]
+                 <li class="ui-form-row">
+                    <label class="ui-form-label">${message("Goods.marketPrice")}</label>
+                    <div class="ui-form-right">
+                        ${currency(goods.marketPrice, true, true)}
+                    </div>
+                </li>
+                [/#if]
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

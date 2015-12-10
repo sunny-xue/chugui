@@ -44,7 +44,7 @@ $(function(){
 			$Img.attr('src',NowSrc);
 			$(this).parent().addClass('active').siblings().removeClass('active');
 		});	
-	}
+	};
 
 	$("#fangdajing").magnifying();
 

@@ -14,9 +14,12 @@ body{
 
 .banner-large-img {
     margin-right: 11px;
+    width: 630px;
+    height: 250px;
+    overflow: hidden;
 }
-
-.banner-large-img img {
+#slidesImgs{ width: 630px;height: 250px;}
+.banner-large-img img{
     width: 630px;
     height: 250px;
 }
@@ -28,12 +31,18 @@ body{
 
 .banner-nav li{
     float: left;
+    width: 158px;
+     height: 95px;;
+}
+
+.banner-nav img{
+     width: 156px;
+     height: 93px;;
 }
 
 .banner-nav .on{
     border: 1px solid #187CE3;
 }
-/***右边交易信息***/
 
 .shop-info {
     height: 356px;
@@ -138,11 +147,6 @@ body{
 }
 
 
-/****商品信息***/
-
-
-/*****热销*******/
-
 .hot-txt {
     line-height: 40px;
     text-align: center;
@@ -204,8 +208,6 @@ body{
     -o-transform: translateX(-10px);
     transform: translateX(-10px);
 }
-
-/******国家特色,限时购********/
 
 .special-txt {
     padding-left: 15px;
@@ -286,7 +288,7 @@ body{
 }
 
 
-/****橱柜****/
+/****姗辨煖****/
 
 .cupboard-box {
     padding-top: 11px;
@@ -350,7 +352,6 @@ body{
     width: 171px;
     height: 100%;
 }
-/******进口食品**********/
 
 .jinkou-txt {
     line-height: 21px;
@@ -401,11 +402,12 @@ body{
 
 .banner-sm-img {
     width: 316px;
-    height: 217px;
+    height: 220px;
+    overflow: hidden;
 }
 .banner-sm-img img{
     width: 316px;
-    height: 217px;
+    height: 215px;
 }
 
 .banner-sm-nav {

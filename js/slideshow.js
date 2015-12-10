@@ -29,6 +29,7 @@
         lastI = e;
     }
     f[e].style.display = "block";
+    n[e].className = "on";
     a[0].onmouseover = k;
     a[0].onmouseout = b;
     h[0].onmouseover = function(i) {

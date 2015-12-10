@@ -114,11 +114,11 @@
                     <h3 class="left">送货清单</h3>
                     <a href="#" class="right go-shop-car">返回修改购物车</a>
                 </div>
-                <div class="product-list">
+                <div class="product-list clearfix">
                     <div class="product-item">
                         <div class="left">
                             <h3>配送方式</h3>
-                            <div>
+                            <div class="send-type">
                                 <button class="button-active">出柜物流</button>
                                 <button>出柜物流</button>
                             </div>
@@ -140,7 +140,7 @@
                     <div class="product-item">
                         <div class="left">
                             <h3>配送方式</h3>
-                            <div>
+                            <div class="send-type">
                                 <button class="button-active">出柜物流</button>
                                 <button>出柜物流</button>
                             </div>
@@ -173,27 +173,74 @@
                 <button>普通发票（纸质）</button>
                 <button>个人</button>
                 <button>明细</button>
-                <a href="#" class="update-btn">修改</a>
+                <a href="javascript:;" class="update-btn">修改</a>
             </div>
         </div>
-        <div class="count-div">
-            <div>已选<b class="product-total">2</b>件商品总计：<b>￥9999.99</b></div>
-            <div>折扣：<b>￥0.00</b></div>
-            <div>运费：<b class="yun-price">￥99.99</b></div>
-            <div>应付：<b>￥99999.99</b></div>
-        </div>
-        <div class="submit-div">
-            <div class="submit-content">
-                <span>应付金额：</span><b>¥9999.99</b>
-                <input type="button" class="red-btn" value="提交订单">
-            </div>
+        <div class="update-receipt form-box" class="hide">
+            <h3>发票信息</h3>
+            <form>
+                <span class="second-title">类型和抬头</span>
+                <div class="receipt-type">
+                    <label id="defaultRecipt" class="radio">
+                        <input type="radio" name="radio1" checked="checked">个人普通发票</label>
+                    <label id="newReceipt" class="radio">
+                        <input type="radio" name="radio1">使用新的发票信息</label>
+                </div>
+                <div class="newinfo item">
+                    <div class="item"><span class="item-label">发票类型：</span>
+                        <div class="item-warp">
+                            <label class="radio-inline">
+                                <input type="radio" name="radio2" checked="checked">普通发票</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="radio2">增值税发票</label>
+                        </div>
+                    </div>
+                    <div class="item"><span class="item-label">发票抬头：</span>
+                        <div class="item-warp">
+                            <label id="personType" class="radio-inline">
+                                <input type="radio" name="radio3" checked="checked">个人</label>
+                            <label id="companyType" class="radio-inline">
+                                <input type="radio" name="radio3">单位</label>
+                        </div>
+                    </div>
+                    <div class="companyInfo item">
+                        <span class="item-label">单位名称：</span>
+                        <div class="item-warp">
+                            <input type="text" class="i-text">
+                        </div>
+                    </div>
+                </div>
+                <span class="second-title">发票内容</span>
+                <div class="item">
+                    <span class="item-label">发票内容：</span>
+                    <div class="item-warp">
+                        <label class="radio-inline">
+                            <input type="radio" name="radio4" checked="checked">明细</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="radio4">办公用品</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="radio4">耗材</label>
+                    </div>
+                </div>
+            </form>
         </div>
 
-          <div class="customer-address">
-            <span> 寄送至：北京朝阳巴拉巴拉巴拉 巴拉巴拉巴拉巴拉巴拉巴154拉 </span>
-            <span>收货人：收货人</span>
-               
-            </div>
+    <div class="count-div">
+        <div>已选<b class="product-total">2</b>件商品总计：<b>￥9999.99</b></div>
+        <div>折扣：<b>￥0.00</b></div>
+        <div>运费：<b class="yun-price">￥99.99</b></div>
+        <div>应付：<b>￥99999.99</b></div>
+    </div>
+    <div class="submit-div">
+        <div class="submit-content">
+            <span>应付金额：</span><b>¥9999.99</b>
+            <input type="button" class="red-btn" value="提交订单">
+        </div>
+    </div>
+   </div>
+    <div class="customer-address">
+        <span> 寄送至：北京朝阳巴拉巴拉巴拉 巴拉巴拉巴拉巴拉巴拉巴154拉 </span>
+        <span>收货人：收货人</span>
     </div>
     <!---底部-->
     <div class="footer">

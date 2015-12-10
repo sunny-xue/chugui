@@ -1,0 +1,165 @@
+#mainContent {
+    width: 990px;
+    margin: 20px auto;
+    min-height: 800px
+}
+
+#bodyBox {
+    min-height: 800px;
+    background: #000
+}
+
+#detailBox {
+    min-height: 300px;
+    margin-bottom: 18px;
+    overflow: hidden
+}
+
+.db-showpanel {
+    width: 462px;
+    height: 462px;
+    float: left;
+    border: 1px solid #e7e7e7
+}
+
+.db-showpanel a {
+    display: table-cell;
+    vertical-align: middle;
+    width: 462px;
+    height: 462px;
+    text-align: center;
+    *display: block;
+    _font-size: 402px;
+    *line-height: 462px;
+    _font: 402px/462px Gulim;
+    _font-family: Gulim
+}
+
+.db-showpanel a img {
+    max-height: 460px;
+    max-width: 460px;
+    margin: 1px;
+    border: 0;
+    vertical-align: middle\9
+}
+
+.db-icbu {
+    width: 526px;
+    _width: 522px;
+    height: 462px;
+    margin-left: 463px;
+    border-top: 1px solid #e7e7e7
+}
+
+.db-icbu h3 {
+    padding: 3px 0;
+    color: #000;
+    font-size: 16px;
+    vertical-align: top
+}
+
+.db-icbu .ui-form-bd {
+    display: block;
+    padding: 19px;
+    min-height: 160px;
+    *height: 160px
+}
+
+.db-icbu .ui-form-row {
+    margin-bottom: 15px;
+    overflow: hidden;
+    *zoom: 1
+}
+
+.db-icbu .ui-form-label {
+    float: left;
+    color: #999
+}
+
+.db-icbu .ui-form-right {
+    margin-left: 70px;
+    color: #666
+}
+
+.db-icbu .superstar-price {
+    height: 27px;
+    line-height: 27px
+}
+
+.superstar-price .price-mgleft {
+    margin-left: 30px
+}
+
+.superstar-price strong {
+    color: #c00;
+    font-weight: 700;
+    font-size: 27px;
+    vertical-align: top
+}
+
+.salesvol {}
+
+.salesvol strong {
+    font-weight: 700;
+    color: #c00
+}
+
+.evalate {}
+
+.scinfo-bd {
+    display: block;
+    padding: 9px;
+    width: 474px;
+    height: 152px;
+    margin-left: 10px;
+    background: #fdfbfa;
+    border: 1px solid #f6f5f3
+}
+
+.scinfo-bd .ui-form-label {
+    color: #8d7664
+}
+
+.scinfo-bd .ui-form-row {
+    margin-bottom: 12px;
+    overflow: hidden;
+    *zoom: 1
+}
+
+.scinfo-bd .ui-form-valid {
+    margin-top: 5px
+}
+
+.scinfo-bd .ui-msg {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #f5f5f5;
+    _width: 225px
+}
+
+.scinfo-bd .ui-msg-con {
+    line-height: 16px;
+    color: #666;
+    background: #fbfbfb;
+    padding: 3px 50px 3px 5px;
+    border: 1px solid #efefef;
+    border-left: 1px solid #e7e7e7;
+    margin: -1px;
+    width: 225px
+}
+
+.scinfo-bd .ui-msg-icon {
+    width: 23px;
+    height: 22px;
+    top: 0;
+    left: 0
+}
+
+.scinfo-bd .ui-msg-tip .ui-msg-icon {
+    background-position: -61px -103px
+}
+
