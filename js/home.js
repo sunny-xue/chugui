@@ -1,6 +1,5 @@
 $(function() {
-    SlideShow(2000, "#slideContainer", "#slidesImgs", "#slideBar");
-    SlideShow(2000, "#sliderSmallContainer", "#slidesSmallImgs", "#slideSmallBar");
+    SlideShow(2000, "#slideContainer", "#slidesImgs", "#banner-large-slideBar");
 
     var productTypeList = $("#productTypeList li");
 

@@ -1,14 +1,183 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>test page</title>
+    <meta charset='utf-8'>
+    <title>test page</title>
+    <style type="text/css">
+    .form-box {
+        position: relative;
+        margin-top: 20px;
+        width: 530px;
+    }
+    
+    .form-box .i-select {
+        width: 120px;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        outline: 0;
+        cursor: pointer;
+        height: 24px;
+    }
+    
+    .form-box .i-text {
+        border: 1px solid #afafaf;
+        padding: 3px;
+        width: 200px;
+        height: 24px;
+        line-height: 24px;
+        vertical-align: middle;
+    }
+    
+    .form-box .i-ta {
+        display: block;
+        margin: 0;
+        padding: 3px;
+        width: 392px;
+        height: 62px;
+        border: 1px solid #afafaf;
+        font-size: 12px;
+    }
+    
+    .form-box .i-text-short {
+        width: 65px;
+    }
+    
+    .form-box .item {
+        position: relative;
+        padding-left: 105px;
+        padding-bottom: 10px;
+        zoom: 1;
+        text-align: left;
+    }
+    
+    .form-box .item-label {
+        display: inline;
+        float: left;
+        width: 100px;
+        margin-left: -105px;
+        text-align: right;
+        height: 26px;
+        line-height: 26px;
+    }
+    
+    .form-box .item-warp {
+        position: relative;
+        display: inline-block;
+        _zoom: 1;
+        *display: inline;
+    }
+    
+    .form-box .item-label i {
+        color: red;
+        font-style: normal;
+    }
+    
+    .form-box .item-set-default {
+        line-height: 26px;
+    }
+    
+    .form-box .item-title {
+        line-height: 26px;
+    }
+    
+    .form-box .item-title .item-label {
+        color: #fc6210;
+    }
+    
+    
+    
+    .form-box .i-chk,
+    .form-box label {
+        vertical-align: middle;
+    }
+    
+    .btn {
+        display: inline-block;
+        zoom: 1;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 20px;
+        color: #FFF;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        background: #ff4001;
+        border: 0;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    </style>
 </head>
+
 <body>
-	<h1>ABC</h1>
-	<h2>ABC</h2>
-	<h3>ABC</h3>
-	<h4>ABC</h4>
-	<h5>ABC</h5>
-	<h6>ABC</h6>
+    <div class="form-box">
+        <form>
+            <div class="item">
+                <span class="item-label">所在地区 <i>*</i></span>
+                <div>
+                    <select class="i-select">
+                        <option>中国大陆</option>
+                    </select>
+                    <select class="i-select">
+                        <option>请选择省市区</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-label">详细地址<i>*</i></span>
+                <div>
+                    <div>
+                        <textarea class="i-ta" placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-label">邮政编码</span>
+                <div class="item-warp">
+                    <input maxlength="16" placeholder="如您不清楚邮递区号，请填写000000" class="i-text" type="text" value="">
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-label">收货人姓名<i>*</i></span>
+                <div class="item-warp">
+                    <input class="i-text" type="text" placeholder="长度不超过25个字符" value="">
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-label">手机号码</span>
+                <select class="i-select">
+                    <option> 中国大陆 +86</option>
+                </select>
+                <div class="item-warp">
+                    <input class="i-text" type="text" placeholder="电话号码、手机号码必须填一项" value="">
+                </div>
+            </div>
+            <div class="item">
+                <span class="item-label">电话号码</span>
+                <select class="i-select">
+                    <option>中国大陆 +86</option>
+                </select>
+                <div class="item-warp">
+                    <input maxlength="6" class="i-text i-text-short" placeholder="区号" type="text" value=""> -
+                </div>
+                <div class="item-warp">
+                    <input maxlength="10" class="i-text i-text-short" placeholder="电话号码" type="text" value=""> -
+                </div>
+                <div class="item-warp">
+                    <input maxlength="6" class="i-text i-text-short" placeholder="分机" type="text" value="">
+                </div>
+            </div>
+            <div class="item item-set-default">
+                <input id="setDefault" type="checkbox" class="i-chk">
+                <label for="setDefault">设置为默认收货地址</label>
+            </div>
+            <div class="item">
+                <button type="submit" class="btn">保存</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

@@ -1,100 +1,98 @@
-body{
-     background-color: #f8f8f8;
-}
 .banner-shop-box {
     position: relative;
-    margin-left: 184px;
+    margin-left: 150px;
 }
-
+.drop-down-icon{
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+    display: inline-block;
+    width: 6px;
+    height: 4px;
+    background: url('../images/drop_down.gif') no-repeat;
+}
+.headerCart span{
+    display: inline-block;
+    text-indent: 6px;
+    width: 13px;
+    height: 12px;
+    background: url('../images/shopcar-count.gif') no-repeat;
+    color: #FFF;
+}
 /**banner**/
-.banner {
-    width: 630px;
-    margin-right: 11px;
+
+.banner-container {
+    position: relative;
 }
 
 .banner-large-img {
-    margin-right: 11px;
-    width: 630px;
-    height: 250px;
+    width: 750px;
+    height: 300x;
     overflow: hidden;
 }
-#slidesImgs{ width: 630px;height: 250px;}
-.banner-large-img img{
-    width: 630px;
-    height: 250px;
+
+.banner-large-img img {
+    width: 750px;
+    height: 300x;
 }
 
 .banner-nav {
-    height: 95px;
-    margin-top: 14px;
-}
-
-.banner-nav li{
-    float: left;
-    width: 158px;
-     height: 95px;;
-}
-
-.banner-nav img{
-     width: 156px;
-     height: 93px;;
-}
-
-.banner-nav .on{
-    border: 1px solid #187CE3;
+    right: 30px;
+    bottom: 20px;
 }
 
 .shop-info {
-    height: 356px;
-    border: 1px solid #B8B3B3;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    font-family: "微软雅黑";
+    font-size: 1.2rem;
+    color: #a3a4a5;
+    position: relative;
 }
 
 .shop-info .title {
-    margin: 10px auto;
+    margin: 20px auto 10px;
     text-align: center;
 }
 
 .shop-info .sign-up {
-    background-color: #B7B3B3;
-    height: 48px;
-    line-height: 48px;
-}
-
-.shop-info .sign-up .left {
-    margin-left: 48px;
-}
-
-.shop-info .sign-up .right {
-    margin-right: 48px;
+    background-color: #e83228;
+    height: 40px;
+    line-height: 40px;
 }
 
 .shop-info .sign-up a {
-    color: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+    width: 98px;
+    height: 38px;
+    border: 1px solid #c30e23;
+    color: #fefefe;
     font-size: 1.4rem;
 }
 
-.shop-info .sign-up a:hover {
-    color: #ff6600;
-    text-decoration: none;
-}
-
 .shop-info .gonggao {
-    margin-left: 10px;
-    height: 42px;
-    line-height: 42px;
+    margin-left: 20px;
+    width: 160px;
+    border-bottom: 1px solid #B8B3B3;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .shop-info .infoBox {
-    border-bottom: 1px solid #B8B3B3;
-    padding-bottom: 10px;
+    width: 200px;
+    margin: 5px 20px 2px 20px;
 }
 
 .shop-info .info {
-    width: 250px;
-    margin-left: 10px;
-    height: 18px;
-    line-height: 18px;
+    height: 20px;
+    line-height: 20px;
     display: inline-block;
+}
+
+.infoBox a {
+    color: #a3a4a5;
 }
 
 .shop-info .gonggao li {
@@ -103,49 +101,40 @@ body{
 }
 
 .product-info {
-    padding-bottom:5px;
+    width: 100%;
+    height: 80px;
+    background-color: #f8b62c;
+    position: absolute;
+    bottom: 0px;
+}
 
+.product-info .product-info-title {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .product-info .total ul {
+    margin-top: 10px;
+    margin-left: 20px;
     display: inline-block;
-
 }
 
 .product-info .total li {
     float: left;
-    background-color: #CC531E;
-    padding: 0px 4px;
+    background-color: #ea5415;
+    padding: 0px 6px;
     line-height: 25px;
-    margin-right: 10px;
-   
-    color: #FFFFFF;
-}
-
-.product-info .product-detail {
-    padding: 0px 14px;
-}
-
-.product-info .product-detail .product-name {
-    width: 160px;
-    margin-right: 50px;
-    display: inline-block;
-}
-
-.product-info .product-detail li {
-    word-spacing: -6px;
-}
-
-.product-info .product-detail .count {
-    width: 28px;
-    display: inline-block;
+    margin-right: 2px;
+    color: #ffffff;
 }
 
 .support-ad-img {
     width: 1100px;
     height: 113px;
 }
-
 
 .hot-txt {
     line-height: 40px;
@@ -162,44 +151,58 @@ body{
     line-height: 40px;
     text-align: center;
     color: #FFFFFF;
-    background-color: #CC531E;
+    background-color: #e83228;
 }
 
 .hot-retailers-img {
     margin-top: 1px;
 }
 
-.hot-retailers-img li{
+.hot-retailers-img li {
     float: left;
-    margin-right:4px;
-    margin-bottom: 4px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.hot-retailers-img img{
-    width: 153px;
-    height: 60px;
+.hot-retailers-img li:nth-child(8) {
+    border-right: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hot-retailers-img li:nth-child(n+9) {
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 0px;
+}
+
+.hot-retailers-img li:nth-last-child(1) {
+    border: 0px;
+}
+
+.hot-retailers-img img {
+    width: 136px;
+    height: 84px;
 }
 
 .hot-retailers-img li:hover img {
-    filter: alpha(opacity = 60);
+    filter: alpha(opacity=60);
     opacity: 0.6;
 }
+
 .hot-ad-img1 {
     width: 163px;
     height: 184px;
 }
 
-.hot-box li{
+.hot-box li {
     float: left;
-   margin-right: 4px;
-   word-spacing: 4px;
+    margin-right: 4px;
+    word-spacing: 4px;
 }
 
-.hot-box img{
+.hot-box img {
     width: 216px;
     height: 195px;
 }
-
 
 .hot-box li:hover img {
     -webkit-transform: translateX(-10px);
@@ -209,74 +212,141 @@ body{
     transform: translateX(-10px);
 }
 
-.special-txt {
-    padding-left: 15px;
-    line-height: 50px;
+.recommend-box {
+    margin-top: 12px;
 }
 
-.special-img {
-    margin-left: -8px;
-}
-.special-img li:hover img {
-   -webkit-transform: translateX(-10px);
-    -moz-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    -o-transform: translateX(-10px);
-    transform: translateX(-10px);
-}
-.special-img-li {
-    margin-left: 7px;
-}
-
-.special-ad-img {
-    width: 270px;
-    height: 241px;
+.recommend-box .recommend-txt {
+    background: url('../images/start-btn.gif') no-repeat;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "SimHei";
+    line-height: 35px;
+    height: 35px;
+    padding-left: 8px;
+    width: 116px;
+    height: 35px;
 }
 
-.timeout-box {
-    clear: both;
+.recommend-box .title-box {
+    position: relative;
 }
 
-.timeout-txt {
-    padding-left: 15px;
-    line-height: 50px;
+.recommend-box .more-btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
-.timeout-img {
-    margin-left: -28px;
+.img-info-list li {
+    float: left;
 }
 
-.timeout-img-li {
-    margin-left: 28px;
+.img-info-list dl {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    width: 218px;
+    height: 321px;
 }
 
-.time-ad-img {
-    width: 347px;
-    height: 241px;
+.img-info-list dt {
+    margin-top: 12px;
 }
 
-.time-ad-img:hover {
-    filter: alpha(opacity = 60);
+.img-info-list img {
+    width: 218px;
+    height: 218px;
+}
+
+.img-info-list img:hover {
+    filter: alpha(opacity=60);
     opacity: 0.6;
 }
 
-.timeout-img .price-div{
-    position: absolute;
-    bottom: 0px;
-    width: 347px;
-    background-color: #cc531e;
-    line-height: 40px;
-    color: #FFF;
-    font-size: 1.8rem;
-    font-family: "SimHei";
+.img-info-list .desc-info {
+    margin-top: 39px;
+    margin-left: 16px;
+    font-family: 'SimHei';
+    color: #555555;
+    font-size: 1.4rem;
 }
 
-.price-div b{
+.img-info-list .price-info {
+    margin-top: 5px;
+    margin-left: 16px;
+    font-family: 'SimHei';
+    font-size: 1.6rem;
+    color: #e83228;
+}
+
+.img-info-list .original-price {
+    font-family: '宋体';
+    font-size: 1.0rem;
+    color: #6a6a6a;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.timeout-box {
+    margin-top: 12px;
+}
+
+.timeout-box .recommend-txt {
+    background: url('../images/start-btn.gif') no-repeat;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "SimHei";
+    line-height: 35px;
+    height: 35px;
+    padding-left: 8px;
+    width: 116px;
+    height: 35px;
+}
+
+.timeout-box .title-box {
+    position: relative;
+}
+
+.timeout-box .more-btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.timeout-box .time-ad-img {
+    width: 361px;
+    height: 220px;
+}
+
+.timeout-box li:nth-child(even) {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.timeout-box .time-ad-img:hover {
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.timeout-box .timeout-img .price-div {
+    position: absolute;
+    bottom: 0px;
+    width: 361px;
+    background-color: #f39800;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 1.6rem;
+}
+
+.timeout-box .price-div b {
     padding-left: 15px;
 }
 
-.timeout-img .qg-btn{
+.timeout-box .qg-btn {
     float: right;
+    text-align: center;
     width: 104px;
     height: 40px;
     border: 0px;
@@ -285,27 +355,75 @@ body{
     background-image: url("../images/qg_btn.gif");
     background-repeat: no-repeat;
     color: #cc531e;
+    font-size: 1.6rem;
+    font-family: 'SimHei';
 }
 
-
-/****姗辨煖****/
-
-.cupboard-box {
-    padding-top: 11px;
-    border-bottom: 1px solid #B8B3B3;
+.cupboard-box .title-box {
+    position: relative;
+    height: 33px;
 }
 
-.cupboard-name {
-    line-height: 40px;
-    width: 240px;
+.cupboard-box .hot-ad-banner {
+    width: 324px;
+    height: 456px;
+}
+
+.cupboard-box .more-btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.cupboard-box dl {
     display: inline-block;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #CC531E;
+    border: 1px solid #e5e5e5;
+    width: 153px;
+    height: 226px;
 }
 
-.cupboard-list {
-    width: 240px;
+.cupboard-box .cupboard-img img {
+    width: 153px;
+    height: 153px;
+}
+
+.cupboard-box .cupboard-img .desc-info {
+    margin-top: 17px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.cupboard-box .cupboard-img .price-info {
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.cupboard-name1 {
+    display: inline-block;
+    height: 33px;
+    width: 86px;
+    background: url('../images/cupboard1.gif') no-repeat;
+}
+
+.cupboard-name2 {
+    display: inline-block;
+    height: 33px;
+    width: 86px;
+    background: url('../images/cupboard2.gif') no-repeat;
+}
+
+.cupboard-name3 {
+    display: inline-block;
+    height: 33px;
+    width: 86px;
+    background: url('../images/cupboard3.gif') no-repeat;
+}
+
+.cupboard-name4 {
+    display: inline-block;
+    height: 33px;
+    width: 86px;
+    background: url('../images/cupboard4.gif') no-repeat;
 }
 
 .cupboard-list ul {
@@ -320,99 +438,37 @@ body{
     font-size: 1.6rem;
     line-height: 35px;
     font-family: "SimHei";
-    
 }
-.cupboard-list li a{
+
+.cupboard-list li a {
     color: #6a6a6a;
 }
 
-.cupboard-list li a:hover{
+.cupboard-list li a:hover {
     color: #ff6600;
 }
-.cupboard-banner li{
+
+.cupboard-banner li {
     float: left;
     margin-right: 3px;
     margin-bottom: 3px;
 }
+
 .cupboard-banner li img {
     width: 169px;
     height: 126px;
 }
 
-.cupboard-banner li:hover img{
-    filter: alpha(opacity = 60);
+.cupboard-banner li:hover img {
+    filter: alpha(opacity=60);
     opacity: 0.6;
 }
 
-.second-cupboard-banner{
-    width: 688px;
-}
-
-.second-cupboard-banner .right-banner-img{
-    width: 171px;
-    height: 100%;
-}
-
-.jinkou-txt {
-    line-height: 21px;
-    padding-top: 20px;
-    padding-bottom: 6px;
-    padding-left: 20px;
+.foot-banner{
+    margin-top: 12px;
     margin-bottom: 12px;
-    border-bottom: 2px solid #CB531D;
 }
-
-.jinkou-img {
-    height: 230px;
-}
-
-.hot-article {
-    margin-left: 35px;
-    width: 145px;
-}
-
-.title-span {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-.hot-article ul {
-    margin-top: 20px;
-    list-style: decimal;
-}
-
-.jinkou-box li {
-    margin-top: 5px;
-}
-
-.school-box {
-    margin-left: 45px;
-}
-
-.ad-img-1 {
-    width: 316px;
-    height: 217px;
-}
-
-.ad-img-2 {
-    width: 120px;
-    height: 217px;
-}
-
-.banner-sm-img {
-    width: 316px;
-    height: 220px;
-    overflow: hidden;
-}
-.banner-sm-img img{
-    width: 316px;
-    height: 215px;
-}
-
-.banner-sm-nav {
-    left: 0px;
-    bottom: 15px;
-    width: 100%;
-    text-align: center;
+.foot-banner img{
+    width: 1100px;
+    height: 90px;
 }

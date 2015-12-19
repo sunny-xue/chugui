@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="CHUGUI B2B Team">
+    <meta name="copyright" content="CHUGUI B2B">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <style id="style-1-cropbar-clipper">
+    /* Copyright 2014 Evernote Corporation. All rights reserved. */
+    
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255, 255, 255, .38) solid !important;
+        border-radius: 4px !important;
+    }
+    
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+    $().ready(function() {
+
+        var $headerName = $("#headerName");
+        var $headerLogin = $("#headerLogin");
+        var $headerRegister = $("#headerRegister");
+        var $headerWelcome = $("#headerWelcome");
+        var $headerLogout = $("#headerLogout");
+        var $goodsSearchForm = $("#goodsSearchForm");
+        var $keyword = $("#goodsSearchForm input");
+        var defaultKeyword = "商品搜索";
+
+        var username = getCookie("username");
+        var nickname = getCookie("nickname");
+        if ($.trim(nickname) != "") {
+            $headerWelcome.show();
+            $headerName.text(nickname).show();
+            $headerLogout.show();
+            $headerLogin.hide();
+            $headerRegister.hide();
+        } else if ($.trim(username) != "") {
+            $headerWelcome.show();
+            $headerName.text(username).show();
+            $headerLogout.show();
+            $headerLogin.hide();
+            $headerRegister.hide();
+        } else {
+            $headerLogin.show();
+            $headerRegister.show();
+            $headerWelcome.hide();
+            $headerLogout.hide();
+        }
+
+        $keyword.focus(function() {
+            if ($.trim($keyword.val()) == defaultKeyword) {
+                $keyword.val("");
+            }
+        });
+
+        $keyword.blur(function() {
+            if ($.trim($keyword.val()) == "") {
+                $keyword.val(defaultKeyword);
+            }
+        });
+
+        $goodsSearchForm.submit(function() {
+            if ($.trim($keyword.val()) == "" || $keyword.val() == defaultKeyword) {
+                return false;
+            }
+        });
+
+    });
+    </script>
+    <!--头部-->
+    <div class="header">
+        <div class="container">
+            <ul class="left">
+                <li id="headerWelcome" style="display: none;">
+                    <span>您好，欢迎来到出柜B2B平台</span>
+                    <span id="headerName" class="headerName">&nbsp;</span>
+                </li>
+                <li id="headerLogin" class="headerLogin">
+                    &nbsp;&nbsp;<a href="/login.jhtml">登录</a>&nbsp;&nbsp;|
+                </li>
+                <li id="headerRegister" class="headerRegister">
+                    &nbsp;&nbsp;<a href="/register.jhtml">注册</a>
+                </li>
+                <li id="headerLogout" class="headerLogout" style="display: none;">
+                    &nbsp;&nbsp;<a href="/logout.jhtml">[退出]</a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="/member/index.jhtml" target="_blank">会员中心</a>
+                </li>
+                <li>
+                    <a href="/seller/index.jhtml" target="_blank">卖家中心</a>
+                </li>
+                <li>
+                    <a href="/article/list/3.jhtml" target="_blank">帮助中心</a>
+                </li>
+                <li id="headerCart" class="headerCart">
+                    <a href="/cart/list.jhtml">购物车 <span>0</span><i class="drop-down-icon"></i></a>
+                </li>
+                 <li>
+                 <a href="/article/list/3.jhtml" target="_blank">关注我们<i class="drop-down-icon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--搜索与导航-->
+    <div class="container search-container">
+        <!--搜索栏-->
+        <div class="nowrap releative">
+            <div class="inline-block clearfix">
+                <a href="/" class="left margin-top20">
+                    <img src="images/logo_head.gif" alt="logo">
+                </a>
+                <a href="" class="left margin-left20">
+                    <img src="images/logo_banner.gif" alt="logo_banner">
+                </a>
+            </div>
+            <div class="inline-block search-box">
+                <form id="goodsSearchForm" action="/goods/search.jhtml" method="post">
+                    <input name="keyword" class="left search-input keyword" value="商品搜索" autocomplete="off" x-webkit-speech="x-webkit-speech" x-webkit-grammar="builtin:search" maxlength="30">
+                    <button class="right search-button" type="submit">搜索</button>
+                </form>
+            </div>
+            <div class="inline-block qrcode-box absolute">
+                <img src="images/QRCode_WeiBo.gif" class="qrcode-img" alt="二维码">
+                <img src="images/QRCode_WeiXin.gif" class="qrcode-img" alt="二维码">
+            </div>
+        </div>
+        <!--导航-->
+        <div class="nav-box">
+            <a href="/" class="all-type-btn">全部商品分类</a>
+            <div class="right-type clearfix">
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/" target="_blank">本周推荐</a></li>
+                    <li><a href="/">特价促销</a></li>
+                    <li><a href="/">尾货清仓</a></li>
+                    <li><a href="/">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="all-type">
+            <div class="all-type-list">
+                <ul id="productTypeList">
+                    <li>
+                        <div>
+                            <a href="/goods/list/251.jhtml">
+                                        进口饼干
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/279.jhtml">曲奇</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/280.jhtml">威化</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/281.jhtml">黄油</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/282.jhtml">儿童益智</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/272.jhtml">
+                                        进口糖果
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/273.jhtml">巧克力</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/274.jhtml">硬糖</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/275.jhtml">软糖</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/276.jhtml">棉花糖</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/277.jhtml">棒棒糖</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/307.jhtml">
+                                        进口果干、坚果
+                                        </a>
+                        </div>
+                        <div class="menu" style="display: none;">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/309.jhtml">进口果干</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/310.jhtml">进口坚果</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/1.jhtml">
+                                        进口休闲零食
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/311.jhtml">膨化</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/312.jhtml">烘焙</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/313.jhtml">海苔</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/314.jhtml">肉制品</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/2.jhtml">
+                                        进口牛奶
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/290.jhtml">全脂</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/291.jhtml">膳食</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/292.jhtml">酸奶</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/296.jhtml">
+                                        进口水、饮料
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/301.jhtml">水</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/306.jhtml">果汁</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/305.jhtml">汽水</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/303.jhtml">咖啡</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/297.jhtml">
+                                        进口冲饮
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/298.jhtml">咖啡</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/300.jhtml">茶</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/299.jhtml">养生</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/315.jhtml">麦片</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/316.jhtml">
+                                        进口调味
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/317.jhtml">酱</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/318.jhtml">沙拉</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/319.jhtml">奶油</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/320.jhtml">黄油</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/321.jhtml">酱油</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/322.jhtml">
+                                        进口主食
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/323.jhtml">面</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/324.jhtml">大米</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/325.jhtml">意面</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="/goods/list/326.jhtml">
+                                        进口方便、速食
+                                        </a>
+                        </div>
+                        <div class="menu">
+                            <dl class="clearfix">
+                                <dt>
+                                    <a href="/goods/list/327.jhtml">罐头</a>
+                                </dt>
+                            </dl>
+                            <dl class="clearfix last">
+                                <dt>
+                                    <a href="/goods/list/328.jhtml">方便面</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner-shop-box">
+            <!--banner-->
+            <div id="slideContainer" class="left banner-container">
+                <div class="banner-img banner-large-img">
+                    <ul id="slidesImgs">
+                        <li style="display: block;">
+                            <a href="#">
+                                <img src="images/home_banner.gif" alt="banner">
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a href="#">
+                                <img src="images/home_banner.gif" alt="banner">
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a href="#">
+                                <img src="images/home_banner.gif" alt="banner">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slide-bar banner-nav" id="banner-large-slideBar">
+                    <ul>
+                        <li value="1" class="on"></li>
+                        <li value="2" class=""></li>
+                        <li value="3" class="on"></li>
+                    </ul>
+                </div>
+            </div>
+            <!--交易信息-->
+            <div class="shop-info">
+                <div class="title">欢迎来到food1988.com</div>
+                <div class="sign-up">
+                    <a href="/login.jhtml" class="left">立即注册</a>
+                    <a href="/register.jhtml" class="right">登陆</a>
+                </div>
+                <div class="gonggao">
+                    公告栏
+                </div>
+                <div class="infoBox">
+                    <ul>
+                        <li><a class="red-a" href="http://139.196.108.210/article/content/201512/24/1.html" title="双十一 单日销售额破十亿！！！" target="_blank"><span class="info txt-ellipsis">双十一 单日销售额破十亿！！！</span></a></li>
+                        <li><a class="red-a" href="http://139.196.108.210/article/content/201512/24/1.html" title="双十一 单日销售额破十亿！！！" target="_blank"><span class="info txt-ellipsis">双十一 单日销售额破十亿！！！</span></a></li>
+                        <li><a class="red-a" href="http://139.196.108.210/article/content/201512/24/1.html" title="双十一 单日销售额破十亿！！！" target="_blank"><span class="info txt-ellipsis">双十一 单日销售额破十亿！！！</span></a></li>
+                        <li><a class="red-a" href="http://139.196.108.210/article/content/201512/22/1.html" title="橱柜电商超市 上线通知！！！" target="_blank"><span class="info txt-ellipsis">橱柜电商超市 上线通知！！！</span></a></li>
+                        <li><a class="red-a" href="http://139.196.108.210/article/content/201512/23/1.html" title="平台双12 惊喜好礼相送" target="_blank"><span class="info txt-ellipsis">平台双12 惊喜好礼相送</span></a></li>
+                    </ul>
+                </div>
+                <div class="product-info">
+                    <div class="product-info-title">昨日交易额</div>
+                    <div class="total clearfix">
+                        <ul>
+                            <li>1</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>3</li>
+                            <li>7</li>
+                            <li>7</li>
+                            <li>9</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 服务支持图片-->
+        <div class="margin-top10"><img class="support-ad-img" src="images/support.gif"></div>
+        <!--品牌供应商-->
+        <div class="margin-top10 clearfix">
+            <div class="hot-retailers-txt tab-txt">品牌供应商</div>
+            <div class="hot-retailers-img">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/hotRetailers.gif" alt="banner"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--本周推荐-->
+        <div class="recommend-box clearfix">
+            <div class="title-box">
+                <div class="recommend-txt">本周推荐</div>
+                <a class="more-btn">更多>></a>
+            </div>
+            <div class="img-info-list">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/recommend-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--特价促销-->
+        <div class="recommend-box clearfix">
+            <div class="title-box">
+                <div class="recommend-txt">特价促销</div>
+                <a class="more-btn">更多>></a>
+            </div>
+            <div class="img-info-list">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/goods-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/goods-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/goods-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/goods-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <a><img src="images/goods-home.gif"></a>
+                            </dt>
+                            <dd class='desc-info'>
+                                <a>奉茶节专享西湖龙井茶</a>
+                            </dd>
+                            <dd class='price-info'>
+                                ￥108.00<span class='original-price'>￥118.00</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--限时购-->
+        <div class="timeout-box clearfix">
+            <div class="title-box">
+                <div class="recommend-txt">限时抢购</div>
+                <a class="more-btn">更多>></a>
+            </div>
+            <div class="timeout-img">
+                <ul>
+                    <li class="li-inline timeout-img-li">
+                        <div class="releative">
+                            <a href="#"><img class="time-ad-img" src="images/time-out.gif"></a>
+                            <div class="price-div">
+                                <b>￥9.90/箱</b>
+                                <a class="qg-btn">马上抢</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li-inline timeout-img-li">
+                        <div class="releative">
+                            <a href="#"><img class="time-ad-img" src="images/time-out.gif"></a>
+                            <div class="price-div">
+                                <b>￥9.90/箱</b>
+                                <a class="qg-btn">马上抢</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li-inline timeout-img-li">
+                        <div class="releative">
+                            <a href="#"><img class="time-ad-img" src="images/time-out.gif"></a>
+                            <div class="price-div">
+                                <b>￥9.90/箱</b>
+                                <a class="qg-btn">马上抢</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="margin-top10 cupboard-box clearfix">
+            <div class="title-box">
+                <div class="cupboard-name1"></div>
+                <a class="more-btn">更多>></a>
+            </div>
+            <div>
+                <a><img src="images/cupboard-banner.gif" class="hot-ad-banner left"></a>
+                <div class="cupboard-img img-info-list cell">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <div class="margin-top10 cupboard-box clearfix">
+            <div class="title-box">
+                <div class="cupboard-name2"></div>
+                <a class="more-btn">更多>></a>
+            </div>
+            <div>
+                <a><img src="images/cupboard-banner.gif" class="hot-ad-banner left"></a>
+                <div class="cupboard-img img-info-list cell">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <div class="margin-top10 cupboard-box clearfix">
+            <div class="title-box">
+                <div class="cupboard-name3"></div>
+                <a class="more-btn">更多>></a>
+            </div>
+            <div>
+                <a><img src="images/cupboard-banner.gif" class="hot-ad-banner left"></a>
+                <div class="cupboard-img img-info-list cell">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <div class="margin-top10 cupboard-box clearfix">
+            <div class="title-box">
+                <div class="cupboard-name4"></div>
+                <a class="more-btn">更多>></a>
+            </div>
+            <div>
+                <a><img src="images/cupboard-banner.gif" class="hot-ad-banner left"></a>
+                <div class="cupboard-img img-info-list cell">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                          <li>
+                            <dl>
+                                <dt>
+                                    <a><img src="images/cupboard-goods-banner.gif"></a>
+                                </dt>
+                                <dd class='desc-info'>
+                                    <a>奉茶节专享西湖龙井茶</a>
+                                </dd>
+                                <dd class='price-info'>
+                                    ￥108.00<span class='original-price'>￥118.00</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-banner txt-algin-center">
+            <a><img src="images/foot-banner.gif" height="90" width="1098"></a>
+        </div>
+    </div>
+    <!---底部-->
+    <div class="footer">
+        <div class="container">
+            <div class="clearfix">
+                <div class="left margin-left25 footer-logo"><span></span><img src="images/logo_foot.gif" alt="logo"></div>
+                <div class="cell footer-detail">
+                    <div class="inline-block footer-list">
+                        <span class="tab-txt">新手指南</span>
+                        <ul>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/8/1.html" title="2014全球可穿戴设备出货量将增超200%" target="_blank">2014全球可</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/7/1.html" title="2014年全年我国跨境电商试点突破30亿元" target="_blank">2014年全年</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/6/1.html" title="中国网民接近6.5亿 较2013年增加3000万" target="_blank">中国网民接</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/5/1.html" title="中国消费者奢侈品消费76％在境外" target="_blank">中国消费者</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/4/1.html" title="2014我国网络购物交易规模2.8万亿 增48%" target="_blank">2014我国网</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inline-block footer-list">
+                        <span class="tab-txt">采购服务</span>
+                        <ul>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/14/1.html" title="将限量”温情”带回家" target="_blank">将限量”温</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/13/1.html" title="年终排行榜盛惠" target="_blank">年终排行榜</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/12/1.html" title="家电狂降五折起" target="_blank">家电狂降五</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/11/1.html" title="劲爆限时抢购" target="_blank">劲爆限时抢</a>
+                            </li>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201510/10/1.html" title="手机全场低至9.5折" target="_blank">手机全场低</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inline-block footer-list">
+                        <span class="tab-txt">供应服务</span>
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="inline-block footer-list">
+                        <span class="tab-txt">出柜服务</span>
+                        <ul>
+                            <li>
+                                <a href="http://139.196.108.210/article/content/201511/15/1.html" title="测试测试" target="_blank">测试测试</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inline-block footer-list">
+                        <span class="tab-txt">出柜服务</span>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right-info">
+                <div class="copy-right-about">
+                    <ul class="inline-block">
+                        <li>
+                            <a href="/article/list/3.jhtml">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="/article/list/2.jhtml">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="/article/list/1.jhtml">诚聘英才</a>
+                        </li>
+                        <li>
+                            <a href="/article/list/3.jhtml">隐私政策</a>
+                        </li>
+                        <li>
+                            <a href="/article/list/3.jhtml">法律声明</a>
+                        </li>
+                        <li>
+                            <a href="/article/list/4.jhtml">客户服务</a>
+                        </li>
+                        <li>
+                            <a href="/friend_link.jhtml">友情链接</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy-right">
+                    <script type="text/javascript">
+                    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                    document.write(unescape("%3Cspan id='cnzz_stat_icon_1256998248'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256998248%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+                    </script><span id="cnzz_stat_icon_1256998248"><a href="http://www.cnzz.com/stat/website.php?web_id=1256998248" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a></span>
+                    <script src=" http://s95.cnzz.com/z_stat.php?id=1256998248&amp;show=pic" type="text/javascript"></script>
+                    <script src="http://c.cnzz.com/core.php?web_id=1256998248&amp;show=pic&amp;t=z" charset="utf-8" type="text/javascript"></script>
+                    <span>Copyright©2015</span>
+                    <span class="margin-left15">出柜电子商务 版权所有</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/resources/shop/default/js/slideshow.js"></script>
+    <script type="text/javascript" src="/resources/shop/default/js/home.js"></script>
+</body>
+
+</html>
