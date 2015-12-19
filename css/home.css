@@ -16,6 +16,7 @@
     text-indent: 6px;
     width: 13px;
     height: 12px;
+    line-height: 12px;
     background: url('../images/shopcar-count.gif') no-repeat;
     color: #FFF;
 }
