@@ -113,7 +113,7 @@ del {
 
 .container {
     width: 1100px !important;
-    margin: 0px auto;
+    margin: 0px auto !important;
     padding: 0px;
     *zoom: 1;
 }
@@ -316,12 +316,12 @@ del {
 }
 
 .red-a {
-    color: #D77C54;
+    color: #F30D0D;
     text-decoration: none;
 }
 
 .red-a:hover {
-    color: #cc531e;
+    color: red;
     text-decoration: none;
 }
 
@@ -543,13 +543,19 @@ del {
 
 .all-type-list ul {
     height: 300px;
-    overflow-y: scroll;
 }
 
 .all-type-list li {
-    line-height: 50px;
     height: 50px;
-    cursor: pointer;
+}
+
+.all-type-list dl{
+    padding-top: 8px;
+}
+
+.all-type-list dd{
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .all-type-list li:nth-child(odd) {
@@ -570,7 +576,6 @@ del {
 .all-type-list .menu {
     width: 560px;
     height: 300px;
-    overflow-y: scroll;
     background-color: #fff;
     padding-left: 10px;
     position: absolute;

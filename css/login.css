@@ -5,30 +5,30 @@ html,body{
 }
 
 .login-wrap {
-    position: relative;
+
     margin: 24px 0 2px;
+    height: 500px;
     height: 500px;
 }
 
-.login-box-container{
-    position: relative;
-}
+
 
 .login-box {
-    position: absolute;
+
     right: 0;
     margin-top: 48px;
     width: 391px;
     height: 391px;
     background-color: #FFF;
     padding: 23px 27px 20px 24px;
+    border: 1px solid #eeeeee;
 }
 
 .login-top{
 	width: 340px;
     white-space: nowrap;
-    height: 29px;
-    line-height: 29px;
+    height: 24px;
+    line-height: 24px;
 }
 
 .login-top span{
@@ -39,44 +39,36 @@ html,body{
 .reg-btn{
 	display: inline-block;
 	margin-left: 156px;
-}
-
-.reg-btn a {
-	display: inline-block;
-    font-size: 1.6rem;
-    color: #EF4502;
+        color: #cc531e;
+        font-size: 1.6rem;font-family: 'SimHei';
 }
 
 .reg-btn b {
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: url(../images/pwd-icons-new.png) -104px -75px no-repeat;
+    width: 18px;
+    height: 18px;
+    background: url(../images/login-arrow-icon.gif) no-repeat;
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .msg-tip {
     background-color: #FFFBCC;
     line-height: 30px;
     font-size: 1.4rem;
-    color: #333333;
+    color: #d6d2a3;
     padding-left: 40px;
     margin-top: 13px;
 }
 
 .login-banner {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width: 100%;
-    height: 500px;
-    background: #CB531D;
+    margin-right: 100px;
+    line-height: 500px;
 }
 
-.login-bg img{
-    width: 100%;
-    height: 500px;
+.login-banner img{
+    width: 600px;
+    height: 317px;
 }
 
 .login-form a{
@@ -88,13 +80,22 @@ html,body{
 }
 
 .login-form .login-input {
-	width: 340px;
- 	height: 38px;
-    line-height: 38px;
+	width: 298px;
+ 	height: 40px;
+    line-height: 40px;
     font-size: 1.6rem;
     text-indent: 9px;
+    border: 1px solid #e5e5e5;
+    color: #959495;
+    outline: none;
 }
-
+.login-form .user-icon, .pwd-icon{
+    float: left;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #eeeeee;
+}
 .login-button {
     width: 340px;
     height: 40px;

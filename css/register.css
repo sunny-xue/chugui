@@ -1,27 +1,65 @@
 /*************注册页面*****************/
+.nav-box{
+    position: relative;
+   border-bottom: 1px solid #dcdcdc;  
+}
 .reg-customer-type {
-    margin-left: 145px;
+    left:140px;
+    bottom: -6px;
+   position: absolute;
 }
 
-.reg-customer-type li {
+.reg-customer-type li{
     float: left;
-    margin-top: 11px;
-    margin-right: 14px;
-    line-height: 18px;
+}
+.reg-customer-type li a{
+    display: inline-block;
+    width: 80px;
+    height: 36px;
+   text-align: center;
+   font-size: 1.4rem;
+   color: #959495;
 }
 
-.reg-customer-type li:nth-child(even) {
-    padding-left: 14px;
-    padding-right: 14px;
-    border-left: 1px solid #9F9F9F;
-    border-right: 1px solid #9F9F9F;
+.reg-customer-type .active-btn{
+    color: #cc531e;
+    background: url('../images/reg-nav-btn.gif') no-repeat;
 }
+.nav-box .reg-des{
+     position: absolute;
+     right: 218px;
+}
+
 
 .reg-box {
     margin-left: 110px;
-    margin-top: 43px;
     margin-bottom: 43px;
     font-family: "SimHei";
+}
+
+.reg-step{
+     margin-left: 160px;
+     margin-top: 26px;
+     margin-bottom: 26px;
+
+}
+.reg-step div{
+       height: 40px;
+}
+  
+
+.reg-step .reg-step-1{
+    
+    background: url('../images/reg-step-bg.gif') 0px 0px no-repeat;
+}
+
+.reg-step .reg-step-2{
+
+    background: url('../images/reg-step-bg.gif') 0px -45px no-repeat;
+}
+
+.reg-step .reg-step-3{
+    background: url('../images/reg-step-bg.gif') 0px -90px no-repeat;
 }
 .reg-box label{
     font-weight: normal;
@@ -63,10 +101,11 @@
 }
 .reg-messge-btn{
 	width: 100px;
-	border: 0px;
+	border: 1px solid #a09fa0;
     background-color: #E5E4E4;
     color: #9F9F9F;
     margin-left: 15px;
+
 }
 
 .reg-ic-img{

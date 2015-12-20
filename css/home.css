@@ -1,3 +1,4 @@
+
 .banner-shop-box {
     position: relative;
     margin-left: 150px;
@@ -217,21 +218,14 @@
     margin-top: 12px;
 }
 
-.recommend-box .recommend-txt {
-    background: url('../images/start-btn.gif') no-repeat;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "SimHei";
-    line-height: 35px;
-    height: 35px;
-    padding-left: 8px;
+.recommend-box .title-box img {
     width: 116px;
     height: 35px;
 }
 
 .recommend-box .title-box {
     position: relative;
+    height: 35px;
 }
 
 .recommend-box .more-btn {
@@ -364,7 +358,10 @@
     position: relative;
     height: 33px;
 }
-
+.cupboard-box .title-box img{
+    width: 86px;
+    height: 33px;
+}
 .cupboard-box .hot-ad-banner {
     width: 324px;
     height: 456px;
