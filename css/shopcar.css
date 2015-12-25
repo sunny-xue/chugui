@@ -5,6 +5,7 @@
 .main-content .nav-view{
 	font-family: "SimHei";
 	font-size: 1.2rem;
+	padding-top: 10px;
 }
 
 .nav-view .head-bg{
@@ -38,11 +39,7 @@
 	width: 910px;
 	height: 90px;
 	padding-top: 15px;
-	margin:5px 0px;
-}
-
-.table-data .data-line:hover{
-	border:1px solid #3c3c3c;
+	margin:0px;
 }
 
 .table-data .data-line:nth-child(even){

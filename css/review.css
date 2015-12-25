@@ -1,25 +1,90 @@
+/* ---------- Score ---------- */
+
+.score0 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -60px no-repeat;
+}
+
+.score1 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -90px no-repeat;
+}
+
+.score2 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -120px no-repeat;
+}
+
+.score3 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -150px no-repeat;
+}
+
+.score4 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -180px no-repeat;
+}
+
+.score5 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -210px no-repeat;
+}
+
+.score6 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -240px no-repeat;
+}
+
+.score7 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -270px no-repeat;
+}
+
+.score8 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -300px no-repeat;
+}
+
+.score9 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -330px no-repeat;
+}
+
+.score10 {
+	width: 60px;
+	height: 20px;
+	background: url(../images/review.gif) 0px -360px no-repeat;
+}
+
+
+/* ---------- Review ---------- */
 #mainContent {
-    width: 990px;
     margin: 20px auto;
-    min-height: 800px
-}
-
-#bodyBox {
     min-height: 800px;
-    background: #000
+    font-family:"SimHei";
 }
-
 #detailBox {
+	width:900px;
     min-height: 300px;
     margin-bottom: 18px;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .db-showpanel {
     width: 462px;
     height: 462px;
     float: left;
-    border: 1px solid #e7e7e7
+    border: 1px solid #e7e7e7;
 }
 
 .db-showpanel a {
@@ -28,11 +93,6 @@
     width: 462px;
     height: 462px;
     text-align: center;
-    *display: block;
-    _font-size: 402px;
-    *line-height: 462px;
-    _font: 402px/462px Gulim;
-    _font-family: Gulim
 }
 
 .db-showpanel a img {
@@ -40,12 +100,10 @@
     max-width: 460px;
     margin: 1px;
     border: 0;
-    vertical-align: middle\9
+    vertical-align: middle\9;
 }
 
 .db-icbu {
-    width: 526px;
-    _width: 522px;
     height: 462px;
     margin-left: 463px;
     border-top: 1px solid #e7e7e7
@@ -162,4 +220,66 @@
 .scinfo-bd .ui-msg-tip .ui-msg-icon {
     background-position: -61px -103px
 }
+.add {
+	margin-bottom: 10px;
+}
+.add td {
+	padding: 4px;
+}
 
+.add .tips {
+	line-height: 22px;
+	padding-left: 4px;
+	color: #ff6600;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.add .star-rating a {
+	width: 23px;
+	height: 22px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	text-indent: -999em;
+	background: url(../images/review.gif) -30px -30px no-repeat;
+}
+
+.add .star-rating-hover a {
+	background-position: -60px -30px;
+}
+
+.add .textarea-div{
+	width: 418px;
+	height: 100px;
+	border: 1px solid #e1e1e1;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.add textarea{
+	width:100%;
+	height:100%;
+	resize: none;
+	border:0;
+	outline: none;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+.add .star-rating-on a {
+	background-position: -90px -30px;
+}
+
+.add .captcha {
+	width: 130px;
+	text-transform: uppercase;
+	ime-mode: disabled;
+}
+
+.add .captchaImage {
+	margin-left: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}

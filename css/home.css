@@ -1,48 +1,4 @@
-
-.banner-shop-box {
-    position: relative;
-    margin-left: 150px;
-}
-.drop-down-icon{
-    margin-left: 5px;
-    margin-top: 5px;
-    float: right;
-    display: inline-block;
-    width: 6px;
-    height: 4px;
-    background: url('../images/drop_down.gif') no-repeat;
-}
-.headerCart span{
-    display: inline-block;
-    text-indent: 6px;
-    width: 13px;
-    height: 12px;
-    line-height: 12px;
-    background: url('../images/shopcar-count.gif') no-repeat;
-    color: #FFF;
-}
-/**banner**/
-
-.banner-container {
-    position: relative;
-}
-
-.banner-large-img {
-    width: 750px;
-    height: 300x;
-    overflow: hidden;
-}
-
-.banner-large-img img {
-    width: 750px;
-    height: 300x;
-}
-
-.banner-nav {
-    right: 30px;
-    bottom: 20px;
-}
-
+@charset "utf-8";
 .shop-info {
     width: 200px;
     height: 300px;
@@ -67,8 +23,8 @@
 .shop-info .sign-up a {
     display: inline-block;
     text-align: center;
-    width: 98px;
-    height: 38px;
+    width: 100px;
+    height: 40px;
     border: 1px solid #c30e23;
     color: #fefefe;
     font-size: 1.4rem;
@@ -241,8 +197,8 @@
 .img-info-list dl {
     display: inline-block;
     border: 1px solid #e5e5e5;
-    width: 218px;
-    height: 321px;
+    width: 220px;
+    height: 323px;
 }
 
 .img-info-list dt {
@@ -376,8 +332,8 @@
 .cupboard-box dl {
     display: inline-block;
     border: 1px solid #e5e5e5;
-    width: 153px;
-    height: 226px;
+    width: 155px;
+    height: 228px;
 }
 
 .cupboard-box .cupboard-img img {

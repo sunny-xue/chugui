@@ -367,6 +367,7 @@ del {
     text-align: center;
     overflow: hidden;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .slide-bar .on {
@@ -443,11 +444,6 @@ del {
 
 
 /* ---------- 搜索栏 ---------- */
-
-.search-container {
-    margin-top: 18px;
-}
-
 .search-box {
     position: absolute;
     margin-left: 40px;
@@ -457,7 +453,7 @@ del {
 .search-input {
     text-indent: 5px;
     width: 256px;
-    height: 35px;
+    height: 39px;
     border: 0px;
     border: 2px solid #e4e4e4;
     outline: none;
@@ -535,6 +531,8 @@ del {
 }
 
 .all-type-list {
+	background-color:#e83228;
+	height:300px;
     width: 150px;
     position: absolute;
     left: 0;
@@ -546,16 +544,10 @@ del {
 }
 
 .all-type-list li {
-    height: 50px;
-}
-
-.all-type-list dl{
-    padding-top: 8px;
-}
-
-.all-type-list dd{
-    padding-top: 5px;
-    padding-left: 5px;
+    height: 25px;
+    line-height: 25px;
+    padding-left:30px;
+       border-bottom:1px solid #A3A3A3;
 }
 
 .all-type-list li:nth-child(odd) {
@@ -566,8 +558,12 @@ del {
     background-color: #c30e23;
 }
 
+.all-type-list li:nth-last-child(1){
+	border:0px;
+}
+
 .all-type-list li a {
-    margin-left: 30px;
+  
     color: #fefefe;
     font-family: "SimHei";
     font-size: 1.2rem;
@@ -654,12 +650,11 @@ del {
 /****底部****/
 
 .footer {
-    clear: both;
     margin: 0px 0px;
     padding: 0px 0px;
     width: 100%;
     height: 230px;
-    background: url("../images/foot_bg.gif");
+    background-color:#F39800;
     color: #FFFFFF;
 }
 
@@ -758,6 +753,103 @@ del {
     border-bottom: 1px solid #e5e5e5;
 }
 
+/* ---------- Dialog ---------- */
+
+.xxDialog {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 25%;
+    _top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(25 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + "px");
+    left: 50%;
+    z-index: 100;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 1px 6px #CB531D;
+    -moz-box-shadow: 1px 1px 6px #CB531D;
+    box-shadow: 1px 1px 6px #CB531D;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=0,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=90,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=180,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=270,strength=3)";
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=0,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=90,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=180,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=270,strength=3);
+    *filter: none;
+    border: 1px solid #CB531D;
+    background-color: #FFF;
+}
+
+.xxDialog .dialogTitle {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size:1.6rem;
+     color: #FFF;
+    font-weight: bold;
+    cursor: move;
+    background-color: #CB531D;
+}
+
+.xxDialog .dialogClose {
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #CB531D;
+    background: url(../images/common1.gif) -30px -330px no-repeat;
+}
+
+.xxDialog .dialogwarnIcon {
+    line-height: 24px;
+    padding-left: 30px;
+    margin: 50px 0px 40px 60px;
+    background: url(../images/common1.gif) -60px -360px no-repeat;
+}
+
+.xxDialog .dialogsuccessIcon {
+    line-height: 24px;
+    padding-left: 30px;
+    margin: 50px 0px 40px 60px;
+    background: url(../images/common1.gif) -30px -390px no-repeat;
+}
+
+.xxDialog .dialogerrorIcon {
+    line-height: 24px;
+    padding-left: 30px;
+    margin: 50px 0px 40px 60px;
+    background: url(../images/common1.gif) 0px -420px no-repeat;
+}
+
+.xxDialog .dialogBottom {
+    height: 34px;
+    padding-right: 5px;
+    text-align: right;
+    background-color: #ff712b;
+}
+
+.xxDialog .dialogIframe {
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    z-index: -1;
+}
+.xxDialog .dialogContent{
+    padding:10px;
+}
+
+.xxDialog input[type=button]{
+    font-size:1.4rem;
+     background-color: #FF4001;
+    text-align: center;
+    border: 1px solid #CB531D;
+    color: #FFF;
+    min-width: 80px;
+    min-height: 34px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.dialogContent tr{
+    height: 30px;
+}
 
 /* ---------- Message ---------- */
 
@@ -1167,4 +1259,50 @@ span.pager-curr {
 
 .more-btn:hover {
     color: #FFFFFF;
+}
+.drop-down-icon{
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+    display: inline-block;
+    width: 6px;
+    height: 4px;
+    background: url('../images/drop_down.gif') no-repeat;
+}
+.headerCart span{
+    display: inline-block;
+    text-indent: 6px;
+    width: 13px;
+    height: 12px;
+    line-height: 12px;
+    background: url('../images/shopcar-count.gif') no-repeat;
+    color: #FFF;
+}
+/**banner**/
+.banner-shop-box {
+    position: relative;
+    margin-left: 150px;
+}
+.banner-container {
+    position: relative;
+}
+
+#slidesImgs{
+     height: 300px;
+    overflow: hidden;
+}
+.banner-large-img {
+    width: 750px;
+    height: 300x;
+    overflow: hidden;
+}
+
+.banner-large-img img {
+    width: 750px;
+    height: 300x;
+}
+
+.banner-nav {
+    left: 33px;
+    bottom: 22px;
 }

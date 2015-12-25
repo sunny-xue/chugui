@@ -48,5 +48,32 @@ $(function(){
 
 	$("#fangdajing").magnifying();
 
-
+	$('.button-bar button').click(function(e){
+		$('.button-bar button').each(function(){
+			$(this).removeClass('button-active');
+		});
+		$(this).addClass('button-active');
+		
+		$('#product-info-div').children().each(function(){
+			$(this).hide();
+		});
+		switch($(this).attr('data')){
+			case 'introductionBtn':{
+				$('#introduction').show();
+				break;
+			}
+			case 'parameterBtn':{
+				$('#parameterValues').show();
+				break;
+			}
+			case 'reviewBtn':{
+				$('#review').show();
+				break;
+			}
+			case 'consultationBtn':{
+				$('#consultation').show();
+				break;
+			}
+		}
+	});
 });

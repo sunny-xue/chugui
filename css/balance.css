@@ -1,252 +1,240 @@
-.main-container {
-    font-family: "SimHei";
-    font-size: 1.4rem;
-    color: #454545;
+.main-container{
+	font-family: "SimHei";
+	font-size: 1.4rem;
+	color: #454545;
+}
+.main-container .address-info, .pay-div, 
+.product-div, .receipt-div, .count-div, .submit-div{
+	border-top: 1px solid #e5e5e5;
+	padding-left: 26px;
+	padding-bottom: 10px;
+	padding-right: 20px;
 }
 
-.main-container .address-info,
-.pay-div,
-.product-div,
-.receipt-div,
-.count-div,
-.submit-div {
-    border-top: 1px solid #e5e5e5;
-    padding-left: 26px;
-    padding-bottom: 10px;
-    padding-right: 20px;
+.selected-btn{
+	background-repeat: no-repeat;
 }
 
-.selected-btn {
-    background-repeat: no-repeat;
+.address-info .add-address-link{
+	margin-top: 17px;
+	color: #1e60cc;
 }
 
-.address-info .add-address-link {
-    margin-top: 17px;
-    color: #1e60cc;
+.address-info .add-address-link:hover{
+	color: #1e60cc;
 }
 
-.address-info .add-address-link:hover {
-    color: #1e60cc;
+.address-list li:first-child{
+	display: block;
 }
 
-.address-list li:first-child {
-    display: block;
+.address-list li{
+	height: 40px;
+	display: none;
 }
 
-.address-list li {
-    height: 40px;
-    display: none;
+.custom-button{
+	width: 155px;
+	height: 35px;
+	border: 0px;
+	background-color: transparent;
+}
+.button-active{
+	border: 0px !important;
+	background: url("../images/selcted-bg.gif") no-repeat;
+	background-size: 100% 35px;
 }
 
-.custom-button {
-    width: 155px;
-    height: 35px;
-    border: 0px;
-    background-color: transparent;
+.more-address .more-nav{
+	width: 12px;
+	height: 10px;
+	border: 0px;
+	background-color: transparent;
+	background-image: url("../images/more.gif");
+	background-repeat: no-repeat;
+}
+.more-address .less-nav{
+	background-image: url("../images/less.gif");
 }
 
-.button-active {
-    border: 0px !important;
-    background: url("../images/selcted-bg.gif") no-repeat;
-    background-size: 100% 35px;
+.pay-type{
+	font-size: 0px;
+}
+.pay-type button{
+	border: 1px solid #e5e5e5;
+	background-color: transparent;
+	height: 35px;
+	width: 110px;
+	font-size: 1.4rem;
+	margin-right: 10px;
 }
 
-.more-address .more-nav {
-    width: 12px;
-    height: 10px;
-    border: 0px;
-    background-color: transparent;
-    background-image: url("../images/more.gif");
-    background-repeat: no-repeat;
+.product-div .go-shop-car{
+	margin-top: 17px;
+	color: #1e60cc;
+}
+.product-item{
+	margin-bottom: 12px;
+}
+.product-item button{
+	border: 1px solid #e5e5e5;
+	background-color: #FFF;
+	height: 35px;
+	width: 159px;
+	font-size: 1.4rem;
+	margin-bottom: 10px;
 }
 
-.more-address .less-nav {
-    background-image: url("../images/less.gif");
+.product-item .left{
+	background-color: #f6f6f6;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	width: 376px;
 }
 
-.pay-type {
-    font-size: 0px;
+.product-item .product-date{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 35px;
 }
 
-.pay-type button {
-    border: 1px solid #e5e5e5;
-    background-color: transparent;
-    height: 35px;
-    width: 110px;
-    font-size: 1.4rem;
-    margin-right: 10px;
+.product-item .price{
+	display: block;
+	padding-left: 40px;
+}
+.product-item .price b{
+	padding-left: 5px;
+	font-family: "微软雅黑";
+	color: #cc531e;
 }
 
-.product-div .go-shop-car {
-    margin-top: 17px;
-    color: #1e60cc;
+.product-item .cell{
+	height: 211px;
+	background-color: #eeeeee;
+	padding-left: 15px;
+	overflow: hidden;
+}
+.product-item  .product-details{
+	padding-left: 10px;
 }
 
-.product-item {
-    margin-bottom: 12px;
+.product-item li{
+	margin-bottom: 25px;
 }
 
-.product-item button {
-    border: 1px solid #e5e5e5;
-    background-color: #FFF;
-    height: 35px;
-    width: 159px;
-    font-size: 1.4rem;
+.note-div{
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.note-div .note-txt{
+	width: 580px;
+	height: 30px;
+	border: 1px solid #e5e5e5;
+	text-indent: 5px;
+}
+.note-div span{
+	margin-left: 10px;
+	color: #a7a7a7;
+	vertical-align: bottom;
 }
 
-.product-item .left {
-    background-color: #f6f6f6;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    width: 376px;
+.receipt-div .receipt-type{
+	padding-left: 20px;
+}
+.receipt-div button{
+	border: 0px;
+	background-color: transparent;
+	font-family: "SimHei";
+	font-size: 1.4rem;
+	margin-right: 10px;
 }
 
-.product-item .product-date {
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 35px;
+.receipt-div .update-btn{
+	font-family: "SimHei";
+	font-size: 1.4rem;
+	color: #356ccf;
 }
 
-.product-item .price {
-    display: block;
-    padding-left: 40px;
+.receipt-div .update-btn:hover{
+	color: #356ccf;
 }
 
-.product-item .price b {
-    padding-left: 5px;
-    font-family: "微软雅黑";
-    color: #cc531e;
+.count-div{
+	font-family: "SimHei";
+	font-size: 1.4rem;
+	color: #818181;
+	text-align: right;
+	padding-top: 10px;
 }
 
-.product-item .cell {
-    background-color: #eeeeee;
-    padding-left: 15px;
-    overflow: hidden;
+.count-div .product-total{
+	width: 20px;
+	color: #cc531e;
+	text-align: center;
 }
 
-.product-item .product-details {
-    padding-left: 10px;
+.count-div .yun-price{
+	color: #cc531e;
 }
 
-.product-item li {
-    margin-bottom: 25px;
+.count-div b{
+	display: inline-block;
+	width: 160px;
+	text-align: left;
+	color: #8e8e8e;
+	font-family: '微软雅黑';
+	height: 25px;
 }
 
-.note-div {
-    padding-left: 20px;
-    padding-bottom: 10px;
+.submit-div{
+	padding-top: 10px;
+	font-family: '微软雅黑';
+	font-size: 1.6rem;
 }
 
-.note-div .note-txt {
-    width: 580px;
-    height: 30px;
-    border: 1px solid #e5e5e5;
+.submit-content{
+	text-align: right;
+	margin-right: 50px;
 }
 
-.note-div span {
-    margin-left: 10px;
-    color: #a7a7a7;
-    vertical-align: bottom;
+.submit-content b{
+	color: #cc531e;
+	margin-right: 30px;
+}
+.submit-content span{
+	font-family: "SimHei";
 }
 
-.receipt-div .receipt-type {
-    padding-left: 20px;
+.submit-content input{
+	width: 150px;
+	height: 35px;
 }
 
-.receipt-div button {
-    border: 0px;
-    background-color: transparent;
-    font-family: "SimHei";
-    font-size: 1.4rem;
-    margin-right: 10px;
+.customer-address{
+	background-color: #f6f6f6;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-right: 50px;
+	text-align: right;
+	font-size: 1.2rem;
+	font-family: "SimHei";
+	color: #a7a7a7;
 }
 
-.receipt-div .update-btn {
-    font-family: "SimHei";
-    font-size: 1.4rem;
-    color: #356ccf;
+.customer-address span{
+	display: block;
+	padding-bottom: 10px;
 }
 
-.receipt-div .update-btn:hover {
-    color: #356ccf;
-}
-
-.count-div {
-    font-family: "SimHei";
-    font-size: 1.4rem;
-    color: #818181;
-    text-align: right;
-    padding-top: 10px;
-}
-
-.count-div .product-total {
-    width: 20px;
-    color: #cc531e;
-    text-align: center;
-}
-
-.count-div .yun-price {
-    color: #cc531e;
-}
-
-.count-div b {
-    display: inline-block;
-    width: 160px;
-    text-align: left;
-    color: #8e8e8e;
-    font-family: '微软雅黑';
-    height: 25px;
-}
-
-.submit-div {
-    padding-top: 10px;
-    font-family: '微软雅黑';
-    font-size: 1.6rem;
-}
-
-.submit-content {
-    text-align: right;
-    margin-right: 50px;
-}
-
-.submit-content b {
-    color: #cc531e;
-    margin-right: 30px;
-}
-
-.submit-content span {
-    font-family: "SimHei";
-}
-
-.submit-content input {
-    width: 150px;
-    height: 35px;
-}
-
-.customer-address {
-    background-color: #f6f6f6;
-    height: 80px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    padding-top: 20px;
-    padding-right: 50px;
-    text-align: right;
-    font-size: 1.2rem;
-    font-family: "SimHei";
-    color: #a7a7a7;
-}
-
-.customer-address span {
-    display: block;
-    padding-bottom: 10px;
-}
 
 .update-receipt {
     font-family: "SimHei";
     font-size: 1.4rem;
     position: relative;
     margin-left: 26px;
-width: 910px;
+
     display: none;
 }
 
